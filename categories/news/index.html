@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Evolving Intelligence Lab</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="朱艺宁教授课题组官网风格的 Hugo 站点，聚焦自主智能体，具身智能，金融时序分析">
+    <meta name="generator" content="Hugo 0.162.1">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+
+    <link rel="stylesheet" href="/NWPU-EVO/ananke/css/main.02a37ad6c4e155c542d276915a0e3f83f5c7c5fec443350f6e60753f1679b7a7.css" integrity="sha256-AqN61sThVcVC0naRWg4/g/XHxf7EQzUPbmB1PxZ5t6c=" crossorigin="anonymous">
+    <script>
+  (function () {
+    "use strict";
+
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
+
+    
+      
+
+    
+
+    
+    
+      <link href="/NWPU-EVO/categories/news/index.xml" rel="alternate" type="application/rss+xml" title="Evolving Intelligence Lab" />
+      <link href="/NWPU-EVO/categories/news/index.xml" rel="feed" type="application/rss+xml" title="Evolving Intelligence Lab" />
+      
+    
+
+    
+      <link rel="canonical" href="https://wuheshan.github.io/NWPU-EVO/categories/news/">
+    
+
+    
+    
+    <meta property="og:url" content="https://wuheshan.github.io/NWPU-EVO/categories/news/">
+	<meta property="og:site_name" content="Evolving Intelligence Lab">
+	<meta property="og:title" content="News">
+	<meta property="og:description" content="朱艺宁教授课题组官网风格的 Hugo 站点，聚焦自主智能体，具身智能，金融时序分析">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="website">
+
+	<meta itemprop="name" content="News">
+	<meta itemprop="description" content="朱艺宁教授课题组官网风格的 Hugo 站点，聚焦自主智能体，具身智能，金融时序分析">
+	<meta itemprop="datePublished" content="2026-01-01T00:00:00+00:00">
+	<meta itemprop="dateModified" content="2026-01-01T00:00:00+00:00">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="News">
+	<meta name="twitter:description" content="朱艺宁教授课题组官网风格的 Hugo 站点，聚焦自主智能体，具身智能，金融时序分析">
+
+      
+      
+    
+	<style>
+body {
+  background-color: #020812;
+}
+
+.hero-home {
+  min-height: 40vh;
+  position: relative;
+  background-image:
+    linear-gradient(180deg, rgba(6, 14, 28, 0.18), rgba(6, 14, 28, 0.62)),
+    url('/NWPU-EVO/images/WuRenJi.jpeg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 720px) {
+  .hero-home {
+    background-attachment: scroll;
+  }
+}
+
+header {
+  background-image:
+    linear-gradient(180deg, rgba(6, 14, 28, 0.22), rgba(6, 14, 28, 0.18)),
+    url('/NWPU-EVO/images/header2.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  position: relative;
+  overflow: visible;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 14, 28, 0.16);
+  pointer-events: none;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, #020812);
+  pointer-events: none;
+  z-index: 0;
+}
+
+header > * {
+  position: relative;
+  z-index: 1;
+}
+
+header > div,
+header nav,
+header .bg-black {
+  background: transparent !important;
+}
+
+header > div {
+  background: transparent !important;
+}
+
+header nav {
+  background: transparent !important;
+  position: relative;
+  z-index: 1000;
+}
+
+.nav-dropdown {
+  position: relative;
+  z-index: 1000;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% - 1px) !important;
+  left: 0;
+  width: auto;
+  min-width: 9rem;
+  max-width: 14rem;
+  z-index: 10000 !important;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+/* Reduce the vertical padding of the top header container classes (pv3) to 1/2 */
+.tc-l.pv3.ph3.ph4-ns {
+  padding-top: 0.3rem !important;
+  padding-bottom: 0.3rem !important;
+}
+
+/* Also target the responsive variants if present */
+.pv3-ns, .pv3-m, .pv3-l {
+  padding-top: 0.3rem !important;
+  padding-bottom: 0.3rem !important;
+}
+
+/* Increase header vertical spacing so dropdown has room above page content */
+header > .pb3-m.pb6-l {
+  padding-top: 1.5rem !important;
+  padding-bottom: 4.5rem !important;
+}
+
+@media screen and (min-width: 64em) {
+  header > .pb3-m.pb6-l {
+    padding-top: 2rem !important;
+    padding-bottom: 5rem !important;
+  }
+}
+
+.min-vh-90 { min-height: 90vh; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.hero-bg,
+.hero-overlay {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.hero-overlay {
+  background: linear-gradient(180deg, rgba(6, 14, 28, 0.18), rgba(6, 14, 28, 0.62));
+  mix-blend-mode: multiply;
+}
+
+.hero-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, #020812, transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-controls {
+  pointer-events: none;
+}
+
+.hero-controls button {
+  pointer-events: all;
+}
+
+.hero-control {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-control:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+  transform: translateY(-2px);
+}
+
+.hero-dots {
+  gap: 0.75rem;
+}
+
+.hero-dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.32);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.hero-dot.is-active {
+  background: #6ab7ff;
+  transform: scale(1.2);
+}
+
+.stat-card {
+  min-height: 12rem;
+}
+
+.card-figure {
+  min-height: 12rem;
+  background: linear-gradient(135deg, rgba(58, 105, 255, 0.16), rgba(6, 14, 28, 0.08));
+}
+
+.announcement-bar {
+  position: relative;
+}
+
+.ticker {
+  min-width: 200%;
+  animation: marquee 20s linear infinite;
+}
+
+.ticker span {
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.research-card,
+.post-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.research-card:hover,
+.post-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+.stat-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  min-height: 220px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card-body {
+  background: rgba(2, 6, 26, 0.96);}
+
+/* Publication page styles */
+.publication-page {
+  background: transparent;
+  color: #0f172a;
+}
+
+.publication-shell {
+  background: #f8fafc;
+  border-radius: 2rem;
+  padding: 3rem 2rem 4rem;
+  box-shadow: 0 32px 90px rgba(15, 23, 42, 0.08);
+}
+
+.publication-header {
+  padding-bottom: 1rem;
+}
+
+.publication-title {
+  color: #0f172a;
+  letter-spacing: -0.04em;
+}
+
+.publication-intro {
+  max-width: 46rem;
+  color: #475569;
+}
+
+.publication-tabs {
+  gap: 0.75rem;
+}
+
+.publication-tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 9rem;
+  padding: 0.8rem 1rem;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.publication-tab:hover,
+.publication-tab:focus {
+  background: #eff6ff;
+  border-color: rgba(59, 130, 246, 0.3);
+  color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.publication-section {
+  padding: 0;
+  background: transparent;
+}
+
+.section-title {
+  color: #0f172a;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -0.75rem;
+  left: 0;
+  width: 4rem;
+  height: 0.25rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #3b82f6, #818cf8);
+}
+
+.publication-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.publication-grid-one {
+  grid-template-columns: 1fr;
+}
+
+.publication-panel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+/* 专利区在大屏上显示两列卡片，移动端回退为一列 */
+#patent .publication-panel-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 900px) {
+  #patent .publication-panel-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.publication-panel-content {
+  flex: 1;
+}
+
+.publication-panel-title {
+  margin: 0;
+  font-size: 1.03rem;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+}
+
+.publication-panel-authors {
+  margin: 0.28rem 0 0;
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.publication-panel-meta {
+  margin-top: 0.6rem;
+  color: #94a3b8;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.3rem 1.2rem;
+  align-items: start;
+}
+
+.publication-panel-meta p {
+  margin: 0;
+}
+
+.publication-card {
+  align-items: flex-start;
+  gap: 1rem;
+  height: 100%;
+  padding: 1.5rem;
+  min-height: 6.8rem;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 1.25rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+}
+
+.publication-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(59, 130, 246, 0.22);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+}
+
+.publication-card-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.publication-card-index {
+  width: 3.4rem;
+  min-width: 3.4rem;
+  height: 3.4rem;
+  min-height: 3.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  color: #2563eb;
+  background: rgba(59, 130, 246, 0.12);
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0;
+  margin-top: 0;
+}
+
+.publication-card-text {
+  color: #0f172a;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.publication-panel {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 1.5rem;
+  padding: 1.75rem;
+}
+
+/* Honor page styles */
+.honor-page {
+  background: transparent;
+  color: #0f172a;
+}
+
+.honor-shell {
+  padding: 0 0 2rem;
+}
+
+.honor-title {
+  color: #0f172a;
+}
+
+.honor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.honor-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: #fff;
+  border: 1px solid rgba(226,232,240,0.8);
+  box-shadow: 0 22px 50px rgba(15,23,42,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 380px;
+}
+
+.honor-card-media {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  background: #f8fafc;
+}
+
+.honor-card-media img.honor-card-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  image-rendering: auto;
+  filter: none;
+}
+
+.honor-card-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: transparent;
+}
+
+.honor-card-copy {
+  padding: 0.5rem 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 0;
+}
+
+.honor-card-copy p {
+  margin: 0;
+}
+
+.honor-card-watermark {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(15,23,42,0.08);
+  font-size: clamp(2.8rem, 4vw, 4.8rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.honor-card-icon {
+  position: relative;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 1.25rem;
+  background: rgba(253,224,71,0.15);
+  display: grid;
+  place-items: center;
+  z-index: 1;
+  box-shadow: 0 14px 30px rgba(249,115,22,0.16);
+}
+
+.honor-card-icon svg {
+  width: 42px;
+  height: 42px;
+}
+
+.honor-card-year {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(31,41,55,0.85);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.honor-card-copy {
+  padding: 1.5rem 1.5rem 2rem;
+}
+
+.honor-card-title {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 700;
+  color: #111827;
+}
+
+.honor-card .honor-card-icon,
+.honor-card .honor-card-year {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.honor-card:hover .honor-card-icon {
+  transform: translateY(-4px);
+}
+
+.honor-card:hover .honor-card-year {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .honor-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 900px) {
+  .honor-grid { grid-template-columns: 1fr; }
+}
+
+/* Honor slider styles */
+.honor-slider {
+  position: relative;
+  max-width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.honor-slider input[type="radio"] { display:none; }
+.honor-slides {
+  display: flex;
+  width: 300%;
+  transition: transform 0.6s cubic-bezier(.2,.9,.3,1);
+}
+.honor-slide {
+  width: 33.3333%;
+  flex: 0 0 33.3333%;
+  min-height: 420px;
+  display: block;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.honor-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: contrast(1.05) saturate(1.02);
+}
+
+#hs1:checked ~ .honor-slides { transform: translateX(0%); }
+#hs2:checked ~ .honor-slides { transform: translateX(-33.3333%); }
+#hs3:checked ~ .honor-slides { transform: translateX(-66.6666%); }
+
+.honor-dots { position: absolute; left:50%; transform: translateX(-50%); bottom: 14px; display:flex; gap:0.6rem; }
+.honor-dots .dot { width:12px; height:12px; border-radius:50%; background:rgba(255,255,255,0.8); box-shadow:0 2px 6px rgba(0,0,0,0.15); display:inline-block; cursor:pointer; }
+.honor-slider input#hs1:checked ~ .honor-dots label[for="hs1"],
+.honor-slider input#hs2:checked ~ .honor-dots label[for="hs2"],
+.honor-slider input#hs3:checked ~ .honor-dots label[for="hs3"] { background:#fff; box-shadow:0 2px 8px rgba(59,130,246,0.35); }
+
+@media (max-width: 900px) { .honor-slide img { height: 260px; } }
+
+.publication-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.publication-list li {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  color: #334155;
+}
+
+.publication-list li:last-child {
+  border-bottom: none;
+}
+
+.publication-panel p,
+.publication-note {
+  color: #475569;
+}
+
+.publication-section[id] {
+  scroll-margin-top: 8rem;
+}
+
+.publication-year-group {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+
+.year-title {
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.year-series .publication-grid {
+  gap: 0.9rem;
+}
+
+@media screen and (max-width: 720px) {
+  .publication-shell {
+    padding: 2rem 1.25rem 2.5rem;
+  }
+
+  .publication-card {
+    padding: 1rem;
+  }
+
+  .publication-card-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .publication-card-index {
+    width: 3rem;
+    min-width: 3rem;
+    height: 3rem;
+    min-height: 3rem;
+  }
+}
+}
+
+.card-body .icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(106, 183, 255, 0.16);
+  color: #6ab7ff;
+  font-size: 1.4rem;
+}
+
+.card-body h3 {
+  margin-bottom: 1rem;
+}
+
+.button-primary,
+.button-secondary {
+  display: inline-block;
+  padding: 1rem 1.6rem;
+  border-radius: 9999px;
+  font-weight: 700;
+}
+
+main.pb7 {
+  padding-bottom: 0 !important;
+}
+
+.button-primary {
+  background-color: #5aa2ff;
+  color: #ffffff;
+}
+
+.nav-brand {
+  line-height: 1.1;
+}
+
+.brand-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 9999px;
+  object-fit: contain;
+  background: #0a1c3c;
+  box-shadow: 0 14px 35px rgba(16, 60, 125, 0.22);
+}
+
+.brand-icon span {
+  display: block;
+  text-align: center;
+  line-height: 1;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  letter-spacing: -0.03em;
+}
+
+.brand-subtitle {
+  margin-top: 0.2rem;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-dropdown:hover > .dropdown-menu,
+.nav-dropdown:focus-within > .dropdown-menu,
+.nav-dropdown .dropdown-menu:hover {
+  display: block !important;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% - 1px) !important;
+  left: 0;
+  min-width: 12rem;
+  margin-top: 0 !important;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(3, 9, 22, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.32);
+  z-index: 999;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.dropdown-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-link:hover,
+.dropdown-link:focus {
+  color: #6ab7ff;
+  background: rgba(106, 183, 255, 0.12);
+}
+
+.dropdown-caret {
+  font-size: 0.7em;
+}
+
+.custom-site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-layout {
+  grid-template-columns: minmax(260px, 340px) minmax(220px, 1.1fr) minmax(220px, 1.1fr) minmax(300px, 1.4fr);
+}
+
+/* Footer link hover: slightly enlarge and change color for headings and list links */
+.custom-site-footer .footer-column h3 a,
+.custom-site-footer .footer-links a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 180ms ease, transform 140ms ease;
+  display: inline-block;
+  transform-origin: left center;
+}
+
+.custom-site-footer .footer-column h3 a:hover,
+.custom-site-footer .footer-links a:hover,
+.custom-site-footer .footer-column h3 a:focus,
+.custom-site-footer .footer-links a:focus {
+  color: #6ab7ff; /* brand highlight */
+  transform: scale(1.06);
+  outline: none;
+}
+
+@media (max-width: 720px) {
+  .custom-site-footer .footer-column h3 a,
+  .custom-site-footer .footer-links a {
+    transform-origin: left center;
+  }
+  .custom-site-footer .footer-column h3 a:hover,
+  .custom-site-footer .footer-links a:hover {
+    transform: scale(1.03);
+  }
+}
+
+.footer-logo {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 9999px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #6c7dff, #4dd3ff);
+}
+
+.footer-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.footer-column h3 {
+  margin-bottom: 1rem;
+}
+
+.footer-column p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.footer-links {
+  padding-left: 0;
+}
+
+.footer-links li {
+  margin-bottom: 1rem;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.8;
+}
+
+.footer-links li:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .footer-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.button-secondary {
+  border: 1px solid rgba(255,255,255,0.24);
+  color: #ffffff;
+}
+
+  .people-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .people-nav-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.6rem;
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.92);
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 6px 18px rgba(2,6,26,0.06);
+    transition: transform 0.16s ease, box-shadow 0.16s ease, background-color 0.16s ease, color 0.16s ease;
+  }
+
+  .people-nav-link:hover,
+  .people-nav-link:focus {
+    background: rgba(106, 183, 255, 0.12);
+    color: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 14px 40px rgba(2,6,26,0.12);
+  }
+
+  .people-nav-link:active {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 22px rgba(2,6,26,0.08);
+  }
+
+  .people-nav-link:focus-visible {
+    outline: 3px solid rgba(106,183,255,0.18);
+    outline-offset: 4px;
+  }
+
+  .people-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .people-section:last-child {
+    border-bottom: none;
+  }
+
+  .people-section h2 {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .people-member-list .people-card {
+    background: rgba(6, 14, 28, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+  }
+
+  body.is-section main {
+    background-color: #f2f2f2;
+    color: #111;
+  }
+
+  body.is-section main h1,
+  body.is-section main h2,
+  body.is-section main h3,
+  body.is-section main h4,
+  body.is-section main p,
+  body.is-section main li,
+  body.is-section main a {
+    color: #111;
+  }
+
+  body.is-section main a:hover,
+  body.is-section main a:focus {
+    color: #000;
+  }
+
+  .teacher-card,
+  .people-card {
+    color: #fff;
+  }
+
+  .people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .people-member-list {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .people-member-list .people-card {
+    display: grid;
+    grid-template-columns: 160px minmax(0, 1fr);
+    gap: 1rem;
+    align-items: stretch;
+    padding: 1rem;
+    border-radius: 0.85rem;
+    background: #ffffff;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    color: #111;
+  }
+
+  .people-section#postdoc .people-grid,
+  .people-section#graduate .people-grid,
+  .people-section#undergraduate .people-grid,
+  .people-section#alumni .people-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    grid-auto-rows: 1fr;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+
+  .people-section#postdoc .people-card,
+  .people-section#graduate .people-card,
+  .people-section#undergraduate .people-card,
+  .people-section#alumni .people-card {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 1rem;
+    align-items: stretch;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    background: #ffffff;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+    color: #111;
+    max-width: none;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .people-card-body,
+  .people-card-field,
+  .people-card-list,
+  .people-card-email {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .people-card-body {
+    gap: 0.2rem;
+  }
+
+  .people-member-list .people-card-avatar {
+    width: 150px;
+    max-width: 150px;
+    height: 100%;
+    margin: 0;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    align-self: stretch;
+  }
+
+  .people-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 0.05rem;
+  }
+
+  .people-card-body h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: #111;
+  }
+
+  .people-card-role {
+    margin: 0.25rem 0 0.7rem;
+    color: #2f66ff;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .people-section#postdoc .people-card .people-card-role,
+  .people-section#graduate .people-card .people-card-role,
+  .people-section#undergraduate .people-card .people-card-role,
+  .people-section#alumni .people-card .people-card-role {
+    color: #2f66ff !important;
+  }
+
+  .people-card-field {
+    display: grid;
+    gap: 0.35rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .people-card-label {
+    font-size: 0.85rem;
+    color: #444;
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+  }
+
+  .people-card-label::before {
+    content: "⚗";
+    font-size: 0.95rem;
+    color: #666;
+  }
+
+  .people-member-list .people-card-avatar {
+    width: 150px;
+    max-width: 150px;
+    height: 180px;
+    margin: 0;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+
+  .people-card-list {
+    margin: 0;
+    padding-left: 1.15rem;
+    color: #333;
+    line-height: 1.55;
+    font-size: 0.95rem;
+  }
+
+  .people-card-list li + li {
+    margin-top: 0.35rem;
+  }
+
+  .people-card-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: #555;
+    text-decoration: none;
+    font-size: 0.92rem;
+    margin-top: 0;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .people-card-email::before {
+    content: "✉";
+    font-size: 0.95rem;
+    color: #666;
+  }
+
+  .people-card-email:hover,
+  .people-card-email:focus {
+    color: #555;
+    text-decoration: none;
+  }
+
+  .people-member-list .people-card p {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .people-member-list .people-card {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .teacher-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .people-card img,
+  .people-card .people-card-avatar {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  .teacher-card {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    gap: 3rem;
+    align-items: start;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    border: none;
+    background: #d0f0c0;
+    box-shadow: 0 22px 50px rgba(0, 0, 0, 0.12);
+    padding: 0;
+    color: #111;
+  }
+
+  .teacher-card-avatar {
+    width: 220px;
+    aspect-ratio: 3 / 4;
+    display: block;
+    object-fit: cover;
+    margin: 3rem 0 0 3rem;
+    border-radius: 0;
+    overflow: hidden;
+  }
+
+  .teacher-card-content {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #111;
+  }
+
+  .teacher-card-header h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    color: #111;
+  }
+
+  .teacher-card-role {
+    color: rgba(17, 17, 17, 0.72);
+    margin-bottom: 1rem;
+  }
+
+  .teacher-card-description {
+    color: rgba(17, 17, 17, 0.88);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    padding: 0.1rem;
+  }
+
+  .teacher-card-contact {
+    display: grid;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  .teacher-card-location {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.50rem;
+    padding: 0.1rem 0.15rem;
+    border-radius: 0.1rem;
+    background: rgba(208, 240, 192, 0.35);
+    color: #111;
+    border: 1px solid rgba(17, 17, 17, 0.08);
+    box-shadow: none;
+  }
+
+  .teacher-card-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+    /* margin-bottom: 1.5rem; */
+  }
+
+  .teacher-info-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 9999px;
+    background: rgba(34, 77, 46, 0.1);
+    color: #134b21;
+    font-size: 0.95rem;
+  }
+
+  .teacher-info-icon--location {
+    width: 1.8rem;
+    height: 1.8rem;
+    flex-shrink: 0;
+    border-radius: 0.35rem;
+    background: url('/NWPU-EVO/images/location.jpg') center center / cover no-repeat;
+    background-color: transparent;
+    border: none;
+    color: transparent;
+  }
+
+  .teacher-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.1rem 0.15rem;
+    border-radius: 0.1rem;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    background: rgba(208, 240, 192, 0.35);
+    color: #111;
+    text-decoration: none;
+    border: 1px solid rgba(17, 17, 17, 0.08);
+    box-shadow: none;
+  }
+
+  .teacher-button:hover,
+  .teacher-button:focus {
+    background: rgba(208, 240, 192, 0.35);
+    transform: none;
+  }
+
+  .teacher-card-list {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .teacher-item {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    overflow: visible;
+    padding: 0;
+  }
+
+  .teacher-item summary {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0.65rem 0;
+    list-style: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: rgba(17, 17, 17, 0.95);
+    line-height: 1.25;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.08);
+  }
+
+  .teacher-item:last-child summary {
+    border-bottom: none;
+  }
+
+  .teacher-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .teacher-item summary::after {
+    content: "▾";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 1);
+    transition: transform 0.2s ease;
+    line-height: 1;
+  }
+
+  .teacher-item[open] summary::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  .teacher-item-content {
+    padding: 0.6rem 0 0 0;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: rgba(17, 17, 17, 0.88);
+  }
+
+  .teacher-item-content p,
+  .teacher-item-content ul,
+  .teacher-item-content ol {
+    margin: 0.5rem 0 0;
+  }
+
+  .teacher-item-content ul,
+  .teacher-item-content ol {
+    padding-left: 1rem;
+  }
+
+  .teacher-item-content p,
+  .teacher-item-content ul,
+  .teacher-item-content ol {
+    margin: 0.65rem 0 0;
+  }
+
+  .teacher-item-content ul,
+  .teacher-item-content ol {
+    padding-left: 1.2rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    .people-member-list .people-card {
+      grid-template-columns: 120px minmax(0, 1fr);
+    }
+
+    .people-member-list .people-card-avatar {
+      width: 120px;
+      max-width: 120px;
+      height: 160px;
+    }
+
+    .teacher-card {
+      grid-template-columns: 1fr;
+    }
+
+    .teacher-card-avatar {
+      min-height: 220px;
+    }
+
+    .people-member-list .people-card {
+      max-width: none;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .people-nav {
+      flex-direction: column;
+    }
+
+  }
+</style>
+
+  </head><body class="ma0 avenir bg-near-white production is-term">
+
+  <header>
+    <div class="pb7 bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center mw8 w-100 items-center justify-between">
+    <a href="/NWPU-EVO/" class="dib no-underline">
+      <div class="nav-brand flex items-center">
+        
+          <img src="/NWPU-EVO/images/nwpu.png" alt="Evolving Intelligence Lab logo" class="brand-icon" />
+        
+        <div class="brand-text ml3">
+          <span class="brand-title f3 f2-m fw7 white-90">Evo Lab</span>
+          <span class="brand-subtitle f7 f6-m white-60">Evolving Intelligence Lab</span>
+        </div>
+      </div>
+    </a>
+    <div class="flex-l items-center">
+      
+        <ul class="pl0 mr3 nav-menu">
+          
+            
+            
+              <li class="list f5 f4-ns fw4 dib pr3">
+                <a class="hover-white white-90 no-underline" href="/NWPU-EVO/" title="首页 page">
+                  首页
+                </a>
+              </li>
+            
+          
+            
+            
+              <li class="list f5 f4-ns fw4 dib pr3 nav-dropdown relative">
+                <a class="hover-white white-90 no-underline flex items-center gap1" href="/NWPU-EVO/people/" title="课题组成员 page">
+                  课题组成员 <span class="dropdown-caret">▾</span>
+                </a>
+                <div class="dropdown-menu absolute bg-black-90 white-90 br2 pa3 shadow-4">
+                  
+                    <a class="dropdown-link" href="/people/">教师</a>
+                    <a class="dropdown-link" href="/people/#postdoc">博士后</a>
+                    <a class="dropdown-link" href="/people/#graduate">研究生</a>
+                    <a class="dropdown-link" href="/people/#undergraduate">本科生</a>
+                    <a class="dropdown-link" href="/people/#alumni">前成员</a>
+                  
+                </div>
+              </li>
+            
+          
+            
+            
+              <li class="list f5 f4-ns fw4 dib pr3 nav-dropdown relative">
+                <a class="hover-white white-90 no-underline flex items-center gap1" href="/NWPU-EVO/publication/" title="发表成果 page">
+                  发表成果 <span class="dropdown-caret">▾</span>
+                </a>
+                <div class="dropdown-menu absolute bg-black-90 white-90 br2 pa3 shadow-4">
+                  
+                    <a class="dropdown-link" href="/publication/#books">书目章节</a>
+                    <a class="dropdown-link" href="/publication/#publication">发表论文</a>
+                    <a class="dropdown-link" href="/publication/#software">软件著作权</a>
+                    <a class="dropdown-link" href="/publication/#patent">发明专利</a>
+                  
+                  
+                </div>
+              </li>
+            
+          
+            
+            
+              <li class="list f5 f4-ns fw4 dib pr3">
+                <a class="hover-white white-90 no-underline" href="/NWPU-EVO/honor/" title="合照与荣誉 page">
+                  合照与荣誉
+                </a>
+              </li>
+            
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+<main class="pb7" role="main">
+  
+  
+
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray"></section>
+    <section class="flex-ns mt5 flex-wrap justify-around">
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+      <time class="f6 db" datetime="2026-01-01T00:00:00Z">January 1, 2026</time>
+    
+    <h1 class="f3 near-black">
+      <a href="/NWPU-EVO/posts/hello/" class="link black dim">
+        具身智能
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>A post body with a fenced code block, used by the copy-button E2E tests.</p>
+<div class="code-block">
+    <button class="code-copy" type="button" hidden aria-label="Copy code to clipboard">
+      <span class="code-copy-label" aria-hidden="true">Copy</span>
+    </button>
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">ananke</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">copy_code</span> = <span style="color:#66d9ef">true</span></span></span></code></pre></div>
+  </div><p>Inline <code>code</code> must not receive a copy button.</p>
+    </div>
+    <a href="/NWPU-EVO/posts/hello/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+    </section>
+    </article>
+</main><footer class="custom-site-footer bg-near-black white pv5" role="contentinfo">
+  <div class="center mw9 ph3 grid gap4 footer-layout">
+    <div class="footer-brand pa4 bg-black-40 br3">
+      
+        <img src="/NWPU-EVO/images/nwpu.png" alt="Evolving Intelligence Lab logo" class="footer-logo mb3" />
+      
+      <h2 class="f3 fw7 mb2">Evo Lab</h2>
+      <p class="white-70">Evolving Intelligence Lab<br>本课题组致力于自主进化智能体、具身智能、金融时序预测</p>
+    </div>
+
+    <div class="footer-column pa4">
+      <h3 class="f5 fw7 mb3"><a href="/people/" class="white-90 no-underline">课题组成员</a></h3>
+      <ul class="footer-links list pa0 ma0">
+        <li><a class="white-70 no-underline" href="/people/">教师</a></li>
+        <li><a class="white-70 no-underline" href="/people/#postdoc">博士后</a></li>
+        <li><a class="white-70 no-underline" href="/people/#graduate">研究生</a></li>
+        <li><a class="white-70 no-underline" href="/people/#undergraduate">本科生</a></li>
+        <li><a class="white-70 no-underline" href="/people/#alumni">前成员</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column pa4">
+      <h3 class="f5 fw7 mb3"><a href="/publication/" class="white-90 no-underline">发表成果</a></h3>
+      <ul class="footer-links list pa0 ma0">
+        <li><a class="white-70 no-underline" href="/publication/#books">书目章节</a></li>
+        <li><a class="white-70 no-underline" href="/publication/#publication">发表论文</a></li>
+        <li><a class="white-70 no-underline" href="/publication/#software">软件著作权</a></li>
+        <li><a class="white-70 no-underline" href="/publication/#patent">发明专利</a></li>
+      </ul>
+    </div>
+
+    
+
+    <div class="footer-column pa4">
+      <h3 class="f5 fw7 mb3">联系我们</h3>
+      <p class="white-70 mb3">地址: 西北工业大学计算机学院</p>
+      <p class="white-70 mb3">电话: +86-129-88208412</p>
+      <p class="white-70 mb1">邮箱: xxx@nwpu.edu.cn</p>
+      <ul class="footer-links list pa0 ma0">
+        <li>朱艺宁: zhuyining@nwpu.edu.cn</li>
+        <li>朱艺宁: zhuyining@nwpu.edu.cn</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

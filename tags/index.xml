@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on Evolving Intelligence Lab</title>
+		<link>https://wuheshan.github.io/NWPU-EVO/tags/</link>
+		<description>Recent content in Tags on Evolving Intelligence Lab</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 02 Jan 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://wuheshan.github.io/NWPU-EVO/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Alpha</title>
+				<link>https://wuheshan.github.io/NWPU-EVO/tags/alpha/</link>
+				<pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>https://wuheshan.github.io/NWPU-EVO/tags/alpha/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Beta</title>
+				<link>https://wuheshan.github.io/NWPU-EVO/tags/beta/</link>
+				<pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>https://wuheshan.github.io/NWPU-EVO/tags/beta/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>
