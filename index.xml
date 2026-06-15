@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Fri, 02 Jan 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Mon, 15 Jun 2026 01:45:10 +0800</lastBuildDate>
 		
 			<atom:link href="https://wuheshan.github.io/NWPU-EVO/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Newnewnew</title>
+				<link>https://wuheshan.github.io/NWPU-EVO/post/newnewnew/</link>
+				<pubDate>Mon, 15 Jun 2026 01:45:10 +0800</pubDate>
+				<guid>https://wuheshan.github.io/NWPU-EVO/post/newnewnew/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>金融时序分析</title>
 				<link>https://wuheshan.github.io/NWPU-EVO/posts/second/</link>
