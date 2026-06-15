@@ -1,0 +1,116 @@
+/* 联系我们页面：仿 ZJU CADD 联系我们风格 */
+
+.contact-header {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(2, 8, 18, 0.72), rgba(2, 8, 18, 0.52)),
+    url('/images/header2.jpeg') center center / cover no-repeat;
+  padding-bottom: 6rem;
+}
+
+.contact-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 1));
+  pointer-events: none;
+}
+
+.contact-page {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+    url('/images/contract/createSword.jpg') center center / cover no-repeat;
+  color: #1f2937;
+  min-height: calc(100vh - 300px);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.contact-title-wrap {
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 2.5rem;
+  padding-bottom: 0.75rem;
+}
+
+.contact-title {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #1e3a6f;
+  margin: 0;
+}
+
+.contact-underline {
+  width: 4rem;
+  height: 4px;
+  background: #1e3a6f;
+  margin: 0.6rem auto 0;
+}
+
+.contact-body {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #374151;
+}
+
+.contact-body p {
+  margin: 0 0 1.5rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  display: grid;
+  gap: 1.25rem;
+  justify-items: center;
+}
+
+.contact-list li {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.contact-label {
+  font-weight: 500;
+  color: #1f2937;
+  white-space: nowrap;
+}
+
+.contact-value {
+  color: #374151;
+}
+
+@media screen and (max-width: 720px) {
+  .contact-header {
+    padding-bottom: 5rem;
+  }
+  .contact-page {
+    display: block;
+    min-height: auto;
+  }
+  .contact-container {
+    padding: 2rem 1.25rem 4rem;
+  }
+
+  .contact-list li {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}

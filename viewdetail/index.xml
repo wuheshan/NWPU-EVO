@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>ViewDetails on Evolving Intelligence Lab</title>
+		<link>https://wuheshan.github.io/NWPU-EVO/viewdetail/</link>
+		<description>Recent content in ViewDetails on Evolving Intelligence Lab</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<atom:link href="https://wuheshan.github.io/NWPU-EVO/viewdetail/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>具身智能：感知-行动-认知深度融合的机器人智能</title>
+				<link>https://wuheshan.github.io/NWPU-EVO/viewdetail/embodiedintelligence/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://wuheshan.github.io/NWPU-EVO/viewdetail/embodiedintelligence/</guid>
+				<description>&lt;p&gt;具身智能（Embodied Intelligence）强调智能并非仅存于算法之中，而是源于智能体与物理环境的动态交互。课题组围绕“给 AI 装上身体”这一核心目标，研究机器人如何在真实世界中感知、推理、行动并持续学习，推动视觉-语言-动作大模型、仿真到现实迁移、灵巧操作与人形机器人控制等前沿方向的发展。&lt;/p&gt;&#xA;&lt;p&gt;我们致力于打通“感知理解—运动生成—物理交互—持续学习”的技术链路，构建面向智能制造、家庭服务与户外巡检等场景的通用机器人智能体。&lt;/p&gt;&#xA;</description>
+			</item>
+			<item>
+				<title>自主进化智能体：持续自优化的通用人工智能系统</title>
+				<link>https://wuheshan.github.io/NWPU-EVO/viewdetail/evolvingintelligentagent/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://wuheshan.github.io/NWPU-EVO/viewdetail/evolvingintelligentagent/</guid>
+				<description>&lt;p&gt;以大模型为代表的生成式人工智能正在重塑科学研究与产业应用的边界，但现有系统大多仍停留在“训练—部署—失效”的静态范式，难以在开放环境中持续积累知识、修正错误并自我升级。&lt;strong&gt;自主进化智能体（Evolving Intelligent Agent）&lt;/strong&gt; 致力于构建能够自主感知环境、设定目标、反思失败并通过自我迭代不断提升能力的智能系统：它不再需要人类步步为营地监督，而是像一位终身学习者，主动发现自身不足、生成改进策略、验证并固化新的能力。&lt;/p&gt;&#xA;&lt;p&gt;课题组围绕“感知—决策—反思—记忆—进化”闭环，开展基础理论与关键技术研究，已在电力市场交易、科研实验自动化、代码生成与 AutoML 等场景落地，形成了从算法创新到系统平台的完整研究链条。&lt;/p&gt;&#xA;</description>
+			</item>
+			<item>
+				<title>金融时序预测：数据驱动的市场建模与风险决策</title>
+				<link>https://wuheshan.github.io/NWPU-EVO/viewdetail/financialtimeseriesprediction/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://wuheshan.github.io/NWPU-EVO/viewdetail/financialtimeseriesprediction/</guid>
+				<description>&lt;p&gt;金融时间序列预测致力于对股价、收益率、波动率、交易量等按时间顺序排列的金融数据进行建模、推断与预测，核心挑战在于捕捉其动态依赖结构、波动聚集性与非平稳特征。课题组融合深度学习、图神经网络、强化学习与因果推断等方法，研究更鲁棒、更可解释的市场预测与风险决策技术。&lt;/p&gt;&#xA;&lt;p&gt;我们的研究覆盖资产定价、投资组合优化、高频交易策略、风险度量与异常检测等多个金融核心场景，努力让 AI 在复杂多变的市场环境中做出稳健、可解释的决策。&lt;/p&gt;&#xA;</description>
+			</item>
+	</channel>
+</rss>

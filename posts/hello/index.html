@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>具身智能 | Evolving Intelligence Lab</title>
+    <title>自主体智能体 | Evolving Intelligence Lab</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="A post with a fenced code block for the copy-button tests.">
+    <meta name="description" content="A second post so list and taxonomy pages have more than one entry.">
     <meta name="generator" content="Hugo 0.163.1">
     
     
@@ -103,30 +103,28 @@
     
     <meta property="og:url" content="https://wuheshan.github.io/NWPU-EVO/posts/hello/">
 	<meta property="og:site_name" content="Evolving Intelligence Lab">
-	<meta property="og:title" content="具身智能">
-	<meta property="og:description" content="A post with a fenced code block for the copy-button tests.">
+	<meta property="og:title" content="自主体智能体">
+	<meta property="og:description" content="A second post so list and taxonomy pages have more than one entry.">
 	<meta property="og:locale" content="en">
 	<meta property="og:type" content="article">
 		<meta property="article:section" content="posts">
-		<meta property="article:published_time" content="2026-01-01T00:00:00+00:00">
-		<meta property="article:modified_time" content="2026-01-01T00:00:00+00:00">
-		<meta property="article:tag" content="Alpha">
-		<meta property="article:tag" content="Beta">
+		<meta property="article:published_time" content="2026-01-02T00:00:00+00:00">
+		<meta property="article:modified_time" content="2026-01-02T00:00:00+00:00">
 
-	<meta itemprop="name" content="具身智能">
-	<meta itemprop="description" content="A post with a fenced code block for the copy-button tests.">
-	<meta itemprop="datePublished" content="2026-01-01T00:00:00+00:00">
-	<meta itemprop="dateModified" content="2026-01-01T00:00:00+00:00">
-	<meta itemprop="wordCount" content="27">
-	<meta itemprop="keywords" content="Alpha,Beta">
+	<meta itemprop="name" content="自主体智能体">
+	<meta itemprop="description" content="A second post so list and taxonomy pages have more than one entry.">
+	<meta itemprop="datePublished" content="2026-01-02T00:00:00+00:00">
+	<meta itemprop="dateModified" content="2026-01-02T00:00:00+00:00">
+	<meta itemprop="wordCount" content="157">
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="具身智能">
-	<meta name="twitter:description" content="A post with a fenced code block for the copy-button tests.">
+	<meta name="twitter:title" content="自主体智能体">
+	<meta name="twitter:description" content="A second post so list and taxonomy pages have more than one entry.">
 
       
       
     
-	<style>
+	
+<style>
 body {
   background-color: #020812;
 }
@@ -201,6 +199,17 @@ header nav {
   background: transparent !important;
   position: relative;
   z-index: 1000;
+}
+
+/* Post pages: navigation only, no hero background */
+.post-header {
+  background-image: none !important;
+  background-color: #020812;
+}
+
+.post-header::before,
+.post-header::after {
+  display: none;
 }
 
 .nav-dropdown {
@@ -372,6 +381,121 @@ header > .pb3-m.pb6-l {
 .card-body {
   background: rgba(2, 6, 26, 0.96);}
 
+/* Research direction cards (CADD style) */
+.cadd-research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.cadd-research-card {
+  display: flex;
+  flex-direction: column;
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 0.875rem;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cadd-research-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.32);
+}
+
+.cadd-research-image {
+  width: 100%;
+  min-height: 260px;
+  height: 260px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.cadd-research-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1.5rem;
+  background: #1e293b;
+}
+
+.cadd-research-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6366f1;
+}
+
+.cadd-research-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.cadd-research-body h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.35;
+}
+
+.cadd-research-body p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cadd-research-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  color: #ffffff;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.cadd-research-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.cadd-research-btn span {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+@media (max-width: 720px) {
+  .cadd-research-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cadd-research-image {
+    min-height: 220px;
+    height: 220px;
+  }
+
+  .cadd-research-body h3 {
+    font-size: 1.2rem;
+  }
+}
+
 /* Publication page styles */
 .publication-page {
   background: transparent;
@@ -446,6 +570,184 @@ header > .pb3-m.pb6-l {
   height: 0.25rem;
   border-radius: 999px;
   background: linear-gradient(90deg, #3b82f6, #818cf8);
+}
+
+/* Homepage "latest achievements" section (matches CADD software style) */
+.home-latest-section {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.home-latest-section-label {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #94a3b8;
+  letter-spacing: 0.05em;
+}
+
+.home-latest-section-title {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.home-latest-carousel {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.home-latest-carousel:last-child {
+  margin-bottom: 0;
+}
+
+.home-latest-track {
+  display: flex;
+  width: max-content;
+  gap: 1.25rem;
+  will-change: transform;
+}
+
+.home-latest-track-forward {
+  animation: home-latest-scroll-forward 40s linear infinite;
+}
+
+.home-latest-track-reverse {
+  animation: home-latest-scroll-reverse 40s linear infinite;
+}
+
+.home-latest-carousel:hover .home-latest-track {
+  animation-play-state: paused;
+}
+
+@keyframes home-latest-scroll-forward {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes home-latest-scroll-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.home-latest-card {
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.home-latest-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(59, 130, 246, 0.25);
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.1);
+}
+
+.home-latest-carousel-card {
+  flex: 0 0 auto;
+  width: 18rem;
+  height: auto;
+  min-height: 11rem;
+}
+
+.home-latest-card-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: inherit;
+  padding: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-latest-card-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.home-latest-index {
+  width: 3rem;
+  min-width: 3rem;
+  height: 3rem;
+  min-height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  color: #2563eb;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.home-latest-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.home-latest-card-title {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.home-latest-card-summary {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.home-latest-card-more {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.25rem;
+  color: #2563eb;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.home-latest-card-link:hover .home-latest-card-more {
+  color: #1d4ed8;
+}
+
+@media (max-width: 720px) {
+  .home-latest-carousel-card {
+    width: 16rem;
+    min-height: 10rem;
+  }
+
+  .home-latest-card-link {
+    padding: 1.25rem;
+  }
+
+  .home-latest-card-main {
+    gap: 0.875rem;
+  }
+
+  .home-latest-index {
+    width: 2.75rem;
+    min-width: 2.75rem;
+    height: 2.75rem;
+    min-height: 2.75rem;
+  }
 }
 
 .publication-grid {
@@ -1077,6 +1379,48 @@ main.pb7 {
     outline-offset: 4px;
   }
 
+/* Intro shell on people page: centered box with white background */
+.people-intro-shell {
+  background: transparent;
+  color: #0f172a;
+  padding: 1.5rem 1.75rem;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+/* Light button style inside the intro shell */
+.people-intro-shell .people-nav {
+  justify-content: center;
+}
+
+.people-intro-shell .people-nav-link {
+  background: #2563eb; /* site primary blue */
+  color: #ffffff;
+  border: none;
+  box-shadow: none;
+  padding: 0.6rem 1.1rem;
+  border-radius: 0.6rem;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.people-intro-shell .people-nav-link:hover,
+.people-intro-shell .people-nav-link:focus {
+  background: #1e4fc4;
+  color: #ffffff;
+  transform: none;
+  box-shadow: none;
+}
+
+.people-intro-shell .people-nav-link:focus-visible {
+  outline: 3px solid rgba(37,99,235,0.18);
+  outline-offset: 3px;
+}
+
   .people-section {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -1553,15 +1897,162 @@ main.pb7 {
     }
 
   }
-</style>
 
+  /* =====================================================
+     Paper / Article page styles
+     ===================================================== */
+  .paper-hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    margin: 1.5rem 0 2.5rem;
+    color: #e2e8f0;
+    box-shadow: 0 14px 36px rgba(0,0,0,.18);
+  }
+
+  .paper-meta {
+    max-width: 48rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .paper-badge {
+    display: inline-block;
+    padding: .35rem .9rem;
+    border-radius: 999px;
+    background: rgba(99, 102, 241, .18);
+    color: #a5b4fc;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+
+  .paper-title {
+    font-size: 1.8rem;
+    line-height: 1.25;
+    font-weight: 700;
+    margin: 1rem 0 .5rem;
+    color: #fff;
+  }
+
+  .paper-subtitle {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    margin: 0 0 1.25rem;
+  }
+
+  .paper-authors {
+    font-size: .95rem;
+    color: #cbd5e1;
+    margin: 0 0 .5rem;
+    line-height: 1.5;
+  }
+
+  .paper-affiliations {
+    font-size: .85rem;
+    color: #94a3b8;
+    margin: 0 0 1.5rem;
+    line-height: 1.4;
+  }
+
+  .paper-actions {
+    display: flex;
+    gap: .75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .paper-download,
+  .paper-link,
+  .nested-links .paper-download,
+  .nested-links .paper-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .65rem 1.25rem;
+    border-radius: .6rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+
+  .paper-download,
+  .nested-links .paper-download {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: #fff !important;
+  }
+
+  .paper-link,
+  .nested-links .paper-link {
+    background: rgba(255,255,255,.1);
+    color: #e2e8f0 !important;
+    border: 1px solid rgba(255,255,255,.15);
+  }
+
+  .paper-download:hover,
+  .paper-link:hover,
+  .nested-links .paper-download:hover,
+  .nested-links .paper-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,.2);
+    color: #fff !important;
+  }
+
+  .post-page-content h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: .75rem;
+    color: #0f172a;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: .35rem;
+  }
+
+  .post-page-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1.25rem;
+    margin-bottom: .5rem;
+    color: #1e293b;
+  }
+
+  .post-page-content ol,
+  .post-page-content ul {
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .post-page-content li {
+    margin-bottom: .5rem;
+    line-height: 1.65;
+  }
+
+  .post-page-content p {
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 720px) {
+    .paper-hero {
+      padding: 1.75rem 1.25rem;
+    }
+
+    .paper-title {
+      font-size: 1.35rem;
+    }
+
+    .paper-subtitle {
+      font-size: .95rem;
+    }
+  }
+
+</style>
   </head><body class="ma0 avenir bg-near-white production is-page is-page page-hello">
-   
   
 
-
   <header>
-    <div class="bg-black">
+    <div class="pb7 bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l center mw8 w-100 items-center justify-between">
     <a href="/NWPU-EVO/" class="dib no-underline">
@@ -1633,6 +2124,15 @@ main.pb7 {
               </li>
             
           
+            
+            
+              <li class="list f5 f4-ns fw4 dib pr3">
+                <a class="hover-white white-90 no-underline" href="/NWPU-EVO/contact/" title="联系我们 page">
+                  联系我们
+                </a>
+              </li>
+            
+          
         </ul>
       
       <div class="ananke-socials"></div>
@@ -1648,43 +2148,98 @@ main.pb7 {
 <main class="pb7" role="main">
   
 
-  <article class="page-hello flex-l mw7 center ph3 flex-wrap justify-between">
-    <header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked ttu">
-    <a class="link dim" href="https://wuheshan.github.io/NWPU-EVO/posts/">Posts</a>
-  </aside><div id="sharing" class="mt3 ananke-socials"></div>
-<h1 class="f1 athelas mt3 mb1">具身智能</h1>
-      
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2026-01-01T00:00:00Z">January 1, 2026</time>
-      
-
-      
-      
-    </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><p>A post body with a fenced code block, used by the copy-button E2E tests.</p>
-<div class="code-block">
-    <button class="code-copy" type="button" hidden aria-label="Copy code to clipboard">
-      <span class="code-copy-label" aria-hidden="true">Copy</span>
-    </button>
-    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">ananke</span>]
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">copy_code</span> = <span style="color:#66d9ef">true</span></span></span></code></pre></div>
-  </div><p>Inline <code>code</code> must not receive a copy button.</p>
+  <article class="page-hello paper-article flex-l mw7 center ph3 flex-wrap justify-between">
+    <div class="post-page-content nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><div class="paper-hero">
+  <div class="paper-meta">
+    <span class="paper-badge">arXiv · 2025</span>
+    <h1 class="paper-title">A Comprehensive Survey of Self-Evolving AI Agents</h1>
+    <p class="paper-subtitle">A New Paradigm Bridging Foundation Models and Lifelong Agentic Systems</p>
+    <p class="paper-authors">
+      Jinyuan Fang, Yanwen Peng, Xi Zhang, Yingxu Wang, Xinhao Yi, Guibin Zhang, Yi Xu, Bin Wu, Siwei Liu, Zihao Li, Zhaochun Ren, Nikos Aletras, Xi Wang, Han Zhou, Zaiqiao Meng
+    </p>
+    <p class="paper-affiliations">
+      University of Glasgow · University of Sheffield · MBZUAI · NUS · University of Cambridge · UCL · University of Aberdeen · Leiden University
+    </p>
+    <div class="paper-actions">
+      <a class="paper-download" href="/images/papers/2026_001_agent.pdf" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        下载 PDF
+      </a>
+      <a class="paper-link" href="https://github.com/EvoAgentX/Awesome-Self-Evolving-Agents" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        GitHub 资源
+      </a>
+    </div>
+  </div>
+</div>
+<h2 id="摘要">摘要</h2>
+<p>大型语言模型（LLM）的最新进展激发了人们对能够解决复杂现实世界任务的 AI 智能体的浓厚兴趣。然而，大多数现有智能体系统依赖手动设计的配置，部署后保持静态，难以适应动态变化的环境。为克服这一局限，近期研究探索了**智能体进化（agent evolution）<strong>技术，旨在基于交互数据与环境反馈自动增强智能体系统。这一新兴方向奠定了</strong>自进化 AI 智能体（Self-Evolving AI Agents）**的基础，将基础模型的静态能力与终身智能体系统所需的持续适应能力连接起来。</p>
+<p>本综述系统回顾了自进化智能体系统的现有技术，提出了一个统一的概念框架，抽象出设计自进化系统背后的反馈循环，涵盖<strong>系统输入、智能体系统、环境和优化器</strong>四个关键组件。基于此框架，文章系统梳理了针对不同智能体组件（基础模型、提示词、记忆、工具、工作流、多智能体通信机制）的自进化技术，并探讨了生物医学、编程、金融等<strong>领域特定</strong>的进化策略，以及评估、安全与伦理等关键议题。</p>
+<h2 id="自进化智能体的三大定律">自进化智能体的三大定律</h2>
+<p>受阿西莫夫机器人三定律启发，作者提出自进化 AI 智能体的安全指导原则：</p>
+<ol>
+<li><strong>Endure（安全适应）</strong>：任何修改都必须保持安全与稳定。</li>
+<li><strong>Excel（性能保持）</strong>：在确保安全的前提下，保持或提升现有任务性能。</li>
+<li><strong>Evolve（持续进化）</strong>：在不超过前两条定律限制的前提下，持续追求新能力与适应性。</li>
+</ol>
+<h2 id="核心内容">核心内容</h2>
+<h3 id="1-ai-智能体系统基础">1. AI 智能体系统基础</h3>
+<ul>
+<li><strong>单智能体系统</strong>：以 LLM 为核心，结合感知、规划、记忆与工具等模块，在开放环境中自主完成目标导向任务。</li>
+<li><strong>多智能体系统（MAS）</strong>：通过功能专化与协作，解决单智能体难以处理的复杂、动态任务。</li>
+<li><strong>终身自进化愿景</strong>：从静态、人工配置的系统向持续自适应的终身智能体系统演进。</li>
+</ul>
+<h3 id="2-mase-概念框架">2. MASE 概念框架</h3>
+<p>作者提出 <strong>Multi-Agent Self-Evolving（MASE）</strong> 框架，将智能体进化抽象为一个迭代优化过程：</p>
+<ul>
+<li><strong>系统输入</strong>：任务描述、实例数据、上下文等。</li>
+<li><strong>智能体系统</strong>：单智能体或多智能体的配置（提示词、工具、记忆、通信拓扑等）。</li>
+<li><strong>环境</strong>：真实或模拟场景，提供反馈信号。</li>
+<li><strong>优化器</strong>：基于规则、梯度、贝叶斯、MCTS、强化学习或学习策略，更新智能体系统。</li>
+</ul>
+<h3 id="3-单智能体优化">3. 单智能体优化</h3>
+<p>针对单个智能体内部组件的优化方法，包括：</p>
+<ul>
+<li><strong>提示词优化</strong>：基于编辑、生成、文本梯度、进化等策略自动优化 prompt。</li>
+<li><strong>记忆优化</strong>：短期与长期记忆的更新与检索策略。</li>
+<li><strong>工具优化</strong>：训练式与推理时的工具选择、调用与学习。</li>
+<li><strong>LLM 行为优化</strong>：推理行为、测试时缩放、反馈与搜索策略。</li>
+</ul>
+<h3 id="4-多智能体优化">4. 多智能体优化</h3>
+<p>多智能体工作流优化从手工设计架构转向自动发现协作策略，主要探索三个相互关联的空间：</p>
+<ul>
+<li><strong>结构空间</strong>：智能体拓扑与交互模式。</li>
+<li><strong>语义空间</strong>：智能体角色、指令与通信协议。</li>
+<li><strong>能力空间</strong>：底层 LLM 骨干模型的能力。</li>
+</ul>
+<p>优化技术涵盖提示级优化、角色/指令优化、通信与拓扑优化、工作流发现等。</p>
+<h3 id="5-领域特定优化">5. 领域特定优化</h3>
+<p>不同领域具有独特的任务结构、知识库、数据模态与约束，需要定制化进化策略：</p>
+<ul>
+<li><strong>生物医学</strong>：对齐临床流程与操作要求。</li>
+<li><strong>编程</strong>：代码生成、调试、测试与验证。</li>
+<li><strong>金融与法律</strong>：高可靠性、合规性与可解释性要求。</li>
+<li><strong>科学研究、游戏、计算机使用</strong>等。</li>
+</ul>
+<h3 id="6-评估方法">6. 评估方法</h3>
+<ul>
+<li><strong>基准测试评估</strong>：标准化任务与指标，如工具/API 驱动智能体基准。</li>
+<li><strong>安全与对齐审计</strong>：检测有害、偏见与错位行为。</li>
+<li><strong>LLM-as-a-Judge</strong>：利用大模型作为灵活、可扩展的评估器。</li>
+<li><strong>动态反馈机制</strong>：将评估信号用于指导优化、提示改进与数据增强。</li>
+</ul>
+<h3 id="7-挑战与未来方向">7. 挑战与未来方向</h3>
+<ul>
+<li><strong>安全、监管与对齐</strong>：现有优化多关注任务指标，忽视安全约束；需要进化感知的审计、可证明安全沙箱与法律协议。</li>
+<li><strong>奖励建模与优化不稳定性</strong>：奖励数据稀缺、噪声监督与分布漂移导致训练不稳定。</li>
+<li><strong>可解释性与可控性</strong>：自进化过程应透明、可追踪、可干预。</li>
+<li><strong>多智能体生态系统的复杂性</strong>：协作、竞争与涌现行为带来新的安全与效率挑战。</li>
+</ul>
+<h2 id="结论">结论</h2>
+<p>本综述将自进化 AI 智能体置于一个统一的四阶段演进轨迹中：从<strong>模型离线预训练（MOP）</strong>、<strong>模型在线适应（MOA）</strong>、<strong>多智能体编排（MAO）<strong>到</strong>多智能体自进化（MASE）</strong>。通过形式化反馈循环框架并系统梳理优化技术、领域策略与评估方法，本文为构建更具适应性、自主性和终身学习能力的智能体系统奠定了基础，并强调了安全、伦理与可靠部署在这一新兴范式中的核心重要性。</p>
 <ul class="pa0">
   
-   <li class="list di">
-     <a href="/NWPU-EVO/categories/news/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">News</a>
-   </li>
-  
 </ul><ul class="pa0">
-  
-   <li class="list di">
-     <a href="/NWPU-EVO/tags/alpha/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Alpha</a>
-   </li>
-  
-   <li class="list di">
-     <a href="/NWPU-EVO/tags/beta/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Beta</a>
-   </li>
   
 </ul>
 

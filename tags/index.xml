@@ -10,22 +10,6 @@
 		
 		
 		
-			<lastBuildDate>Fri, 02 Jan 2026 00:00:00 +0000</lastBuildDate>
-		
 			<atom:link href="https://wuheshan.github.io/NWPU-EVO/tags/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>Alpha</title>
-				<link>https://wuheshan.github.io/NWPU-EVO/tags/alpha/</link>
-				<pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
-				<guid>https://wuheshan.github.io/NWPU-EVO/tags/alpha/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Beta</title>
-				<link>https://wuheshan.github.io/NWPU-EVO/tags/beta/</link>
-				<pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-				<guid>https://wuheshan.github.io/NWPU-EVO/tags/beta/</guid>
-				<description></description>
-			</item>
 	</channel>
 </rss>

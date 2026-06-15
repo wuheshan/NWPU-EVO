@@ -123,7 +123,8 @@
       
       
     
-	<style>
+	
+<style>
 body {
   background-color: #020812;
 }
@@ -198,6 +199,17 @@ header nav {
   background: transparent !important;
   position: relative;
   z-index: 1000;
+}
+
+/* Post pages: navigation only, no hero background */
+.post-header {
+  background-image: none !important;
+  background-color: #020812;
+}
+
+.post-header::before,
+.post-header::after {
+  display: none;
 }
 
 .nav-dropdown {
@@ -369,6 +381,121 @@ header > .pb3-m.pb6-l {
 .card-body {
   background: rgba(2, 6, 26, 0.96);}
 
+/* Research direction cards (CADD style) */
+.cadd-research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.cadd-research-card {
+  display: flex;
+  flex-direction: column;
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 0.875rem;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cadd-research-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.32);
+}
+
+.cadd-research-image {
+  width: 100%;
+  min-height: 260px;
+  height: 260px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.cadd-research-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1.5rem;
+  background: #1e293b;
+}
+
+.cadd-research-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6366f1;
+}
+
+.cadd-research-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.cadd-research-body h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.35;
+}
+
+.cadd-research-body p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cadd-research-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  color: #ffffff;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.cadd-research-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.cadd-research-btn span {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+@media (max-width: 720px) {
+  .cadd-research-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cadd-research-image {
+    min-height: 220px;
+    height: 220px;
+  }
+
+  .cadd-research-body h3 {
+    font-size: 1.2rem;
+  }
+}
+
 /* Publication page styles */
 .publication-page {
   background: transparent;
@@ -443,6 +570,184 @@ header > .pb3-m.pb6-l {
   height: 0.25rem;
   border-radius: 999px;
   background: linear-gradient(90deg, #3b82f6, #818cf8);
+}
+
+/* Homepage "latest achievements" section (matches CADD software style) */
+.home-latest-section {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.home-latest-section-label {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #94a3b8;
+  letter-spacing: 0.05em;
+}
+
+.home-latest-section-title {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.home-latest-carousel {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.home-latest-carousel:last-child {
+  margin-bottom: 0;
+}
+
+.home-latest-track {
+  display: flex;
+  width: max-content;
+  gap: 1.25rem;
+  will-change: transform;
+}
+
+.home-latest-track-forward {
+  animation: home-latest-scroll-forward 40s linear infinite;
+}
+
+.home-latest-track-reverse {
+  animation: home-latest-scroll-reverse 40s linear infinite;
+}
+
+.home-latest-carousel:hover .home-latest-track {
+  animation-play-state: paused;
+}
+
+@keyframes home-latest-scroll-forward {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes home-latest-scroll-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.home-latest-card {
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.home-latest-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(59, 130, 246, 0.25);
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.1);
+}
+
+.home-latest-carousel-card {
+  flex: 0 0 auto;
+  width: 18rem;
+  height: auto;
+  min-height: 11rem;
+}
+
+.home-latest-card-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: inherit;
+  padding: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-latest-card-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.home-latest-index {
+  width: 3rem;
+  min-width: 3rem;
+  height: 3rem;
+  min-height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  color: #2563eb;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.home-latest-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.home-latest-card-title {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.home-latest-card-summary {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.home-latest-card-more {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.25rem;
+  color: #2563eb;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.home-latest-card-link:hover .home-latest-card-more {
+  color: #1d4ed8;
+}
+
+@media (max-width: 720px) {
+  .home-latest-carousel-card {
+    width: 16rem;
+    min-height: 10rem;
+  }
+
+  .home-latest-card-link {
+    padding: 1.25rem;
+  }
+
+  .home-latest-card-main {
+    gap: 0.875rem;
+  }
+
+  .home-latest-index {
+    width: 2.75rem;
+    min-width: 2.75rem;
+    height: 2.75rem;
+    min-height: 2.75rem;
+  }
 }
 
 .publication-grid {
@@ -1074,6 +1379,48 @@ main.pb7 {
     outline-offset: 4px;
   }
 
+/* Intro shell on people page: centered box with white background */
+.people-intro-shell {
+  background: transparent;
+  color: #0f172a;
+  padding: 1.5rem 1.75rem;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+/* Light button style inside the intro shell */
+.people-intro-shell .people-nav {
+  justify-content: center;
+}
+
+.people-intro-shell .people-nav-link {
+  background: #2563eb; /* site primary blue */
+  color: #ffffff;
+  border: none;
+  box-shadow: none;
+  padding: 0.6rem 1.1rem;
+  border-radius: 0.6rem;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.people-intro-shell .people-nav-link:hover,
+.people-intro-shell .people-nav-link:focus {
+  background: #1e4fc4;
+  color: #ffffff;
+  transform: none;
+  box-shadow: none;
+}
+
+.people-intro-shell .people-nav-link:focus-visible {
+  outline: 3px solid rgba(37,99,235,0.18);
+  outline-offset: 3px;
+}
+
   .people-section {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -1550,8 +1897,157 @@ main.pb7 {
     }
 
   }
-</style>
 
+  /* =====================================================
+     Paper / Article page styles
+     ===================================================== */
+  .paper-hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    margin: 1.5rem 0 2.5rem;
+    color: #e2e8f0;
+    box-shadow: 0 14px 36px rgba(0,0,0,.18);
+  }
+
+  .paper-meta {
+    max-width: 48rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .paper-badge {
+    display: inline-block;
+    padding: .35rem .9rem;
+    border-radius: 999px;
+    background: rgba(99, 102, 241, .18);
+    color: #a5b4fc;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+
+  .paper-title {
+    font-size: 1.8rem;
+    line-height: 1.25;
+    font-weight: 700;
+    margin: 1rem 0 .5rem;
+    color: #fff;
+  }
+
+  .paper-subtitle {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    margin: 0 0 1.25rem;
+  }
+
+  .paper-authors {
+    font-size: .95rem;
+    color: #cbd5e1;
+    margin: 0 0 .5rem;
+    line-height: 1.5;
+  }
+
+  .paper-affiliations {
+    font-size: .85rem;
+    color: #94a3b8;
+    margin: 0 0 1.5rem;
+    line-height: 1.4;
+  }
+
+  .paper-actions {
+    display: flex;
+    gap: .75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .paper-download,
+  .paper-link,
+  .nested-links .paper-download,
+  .nested-links .paper-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .65rem 1.25rem;
+    border-radius: .6rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+
+  .paper-download,
+  .nested-links .paper-download {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: #fff !important;
+  }
+
+  .paper-link,
+  .nested-links .paper-link {
+    background: rgba(255,255,255,.1);
+    color: #e2e8f0 !important;
+    border: 1px solid rgba(255,255,255,.15);
+  }
+
+  .paper-download:hover,
+  .paper-link:hover,
+  .nested-links .paper-download:hover,
+  .nested-links .paper-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,.2);
+    color: #fff !important;
+  }
+
+  .post-page-content h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: .75rem;
+    color: #0f172a;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: .35rem;
+  }
+
+  .post-page-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1.25rem;
+    margin-bottom: .5rem;
+    color: #1e293b;
+  }
+
+  .post-page-content ol,
+  .post-page-content ul {
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .post-page-content li {
+    margin-bottom: .5rem;
+    line-height: 1.65;
+  }
+
+  .post-page-content p {
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 720px) {
+    .paper-hero {
+      padding: 1.75rem 1.25rem;
+    }
+
+    .paper-title {
+      font-size: 1.35rem;
+    }
+
+    .paper-subtitle {
+      font-size: .95rem;
+    }
+  }
+
+</style>
   </head><body class="ma0 avenir bg-near-white production is-section is-section">
 
   <header>
@@ -1627,6 +2123,15 @@ main.pb7 {
               </li>
             
           
+            
+            
+              <li class="list f5 f4-ns fw4 dib pr3">
+                <a class="hover-white white-90 no-underline" href="/NWPU-EVO/contact/" title="联系我们 page">
+                  联系我们
+                </a>
+              </li>
+            
+          
         </ul>
       
       <div class="ananke-socials"></div>
@@ -1641,22 +2146,24 @@ main.pb7 {
 <main class="pb7" role="main">
   <section class="pa4 ph3 ph5-l">
     <div class="center mw8">
-      <article class="mb5">
-        <p>欢迎来到朱艺宁教授课题组成员页面。我们的团队主要致力于自主智能体研究，推动具身智能与金融时序分析的前沿进展。</p>
+      <div class="people-intro-shell mb5">
+        <article>
+          <p>欢迎来到朱艺宁教授课题组成员页面。我们的团队主要致力于自主智能体研究，推动具身智能与金融时序分析的前沿进展。</p>
 
-      </article>
+        </article>
 
-      <div class="people-nav mb4">
+        <div class="people-nav mb4">
         <a class="people-nav-link" href="#teachers">教师</a>
         <a class="people-nav-link" href="#postdoc">博士后</a>
         <a class="people-nav-link" href="#graduate">研究生</a>
         <a class="people-nav-link" href="#undergraduate">本科生</a>
         <a class="people-nav-link" href="#alumni">前成员</a>
+        </div>
       </div>
 
       <section id="teachers" class="people-section">
         <h2 class="f2 fw7 mb3">教师</h2>
-        <p class="f5 white-70 mb4">教师团队负责课题组总体科研方向与学术指导。</p>
+        
         <div class="teacher-grid">
 
           <article class="teacher-card bg-black-90">
@@ -1892,12 +2399,12 @@ main.pb7 {
 
       <section id="postdoc" class="people-section">
         <h2 class="f2 fw7 mb3">博士后</h2>
-        <p class="f5 white-70 mb4">博士后主要负责核心算法开发与跨学科科研项目推进。</p>
+        
         <div class="people-grid people-member-list">
           <article class="people-card">
-            <img class="people-card-avatar" src="/NWPU-EVO/images/people_page/doctor/ZhuYiNing.png" alt="赵四" />
+            <img class="people-card-avatar" src="/NWPU-EVO/images/people_page/doctor/ZhuYiNing.png" alt="赵明轩" />
             <div class="people-card-body">
-              <h3>赵四</h3>
+              <h3>赵明轩</h3>
               <p class="people-card-role">博士后/助理研究员</p>
               <div class="people-card-field">
                 <div class="people-card-label">研究方向</div>
@@ -1941,7 +2448,7 @@ main.pb7 {
 
       <section id="graduate" class="people-section">
         <h2 class="f2 fw7 mb3">研究生</h2>
-        <p class="f5 white-70 mb4">研究生团队承担实验实现、数据分析与论文撰写工作。</p>
+        
         <div class="people-grid people-member-list">
           <article class="people-card">
             <img class="people-card-avatar" src="/NWPU-EVO/images/people_page/postgraduate/ZhuYiNing.png" alt="张颖" />
@@ -1990,7 +2497,7 @@ main.pb7 {
 
       <section id="undergraduate" class="people-section">
         <h2 class="f2 fw7 mb3">本科生</h2>
-        <p class="f5 white-70 mb4">本科生成员参与系统开发、实验验证与数据支持。</p>
+        
         <div class="people-grid people-member-list">
           <article class="people-card">
             <img class="people-card-avatar" src="/NWPU-EVO/images/people_page/undergraduate/ZhuYiNing.png" alt="韩雪" />
@@ -2039,7 +2546,7 @@ main.pb7 {
 
       <section id="alumni" class="people-section">
         <h2 class="f2 fw7 mb3">前成员</h2>
-        <p class="f5 white-70 mb4">前成员继续在学术与产业界深耕研究与应用。</p>
+        
         <div class="people-grid people-member-list">
           <article class="people-card">
             <img class="people-card-avatar" src="/NWPU-EVO/images/people_page/FormerMembers/ZhuYiNing.png" alt="王晨" />

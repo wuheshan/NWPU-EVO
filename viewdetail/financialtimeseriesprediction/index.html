@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Evolving Intelligence Lab</title>
+    <title>金融时序预测：数据驱动的市场建模与风险决策 | Evolving Intelligence Lab</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="朱艺宁教授课题组官网风格的 Hugo 站点，聚焦自主智能体，具身智能，金融时序分析">
+    <meta name="description" content="Financial Time Series Prediction 研究方向介绍">
     <meta name="generator" content="Hugo 0.163.1">
     
     
@@ -94,37 +94,34 @@
     
 
     
-    
-      <link href="/NWPU-EVO/categories/tech/index.xml" rel="alternate" type="application/rss+xml" title="Evolving Intelligence Lab" />
-      <link href="/NWPU-EVO/categories/tech/index.xml" rel="feed" type="application/rss+xml" title="Evolving Intelligence Lab" />
-      
-    
 
     
-      <link rel="canonical" href="https://wuheshan.github.io/NWPU-EVO/categories/tech/">
+      <link rel="canonical" href="https://wuheshan.github.io/NWPU-EVO/viewdetail/financialtimeseriesprediction/">
     
 
     
     
-    <meta property="og:url" content="https://wuheshan.github.io/NWPU-EVO/categories/tech/">
+    <meta property="og:url" content="https://wuheshan.github.io/NWPU-EVO/viewdetail/financialtimeseriesprediction/">
 	<meta property="og:site_name" content="Evolving Intelligence Lab">
-	<meta property="og:title" content="Tech">
-	<meta property="og:description" content="朱艺宁教授课题组官网风格的 Hugo 站点，聚焦自主智能体，具身智能，金融时序分析">
+	<meta property="og:title" content="金融时序预测：数据驱动的市场建模与风险决策">
+	<meta property="og:description" content="Financial Time Series Prediction 研究方向介绍">
 	<meta property="og:locale" content="en">
-	<meta property="og:type" content="website">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="viewdetail">
 
-	<meta itemprop="name" content="Tech">
-	<meta itemprop="description" content="朱艺宁教授课题组官网风格的 Hugo 站点，聚焦自主智能体，具身智能，金融时序分析">
-	<meta itemprop="datePublished" content="2026-01-02T00:00:00+00:00">
-	<meta itemprop="dateModified" content="2026-01-02T00:00:00+00:00">
+	<meta itemprop="name" content="金融时序预测：数据驱动的市场建模与风险决策">
+	<meta itemprop="description" content="Financial Time Series Prediction 研究方向介绍">
+	<meta itemprop="wordCount" content="13">
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="Tech">
-	<meta name="twitter:description" content="朱艺宁教授课题组官网风格的 Hugo 站点，聚焦自主智能体，具身智能，金融时序分析">
+	<meta name="twitter:title" content="金融时序预测：数据驱动的市场建模与风险决策">
+	<meta name="twitter:description" content="Financial Time Series Prediction 研究方向介绍">
 
       
       
     
-	<style>
+	
+
+<style>
 body {
   background-color: #020812;
 }
@@ -199,6 +196,17 @@ header nav {
   background: transparent !important;
   position: relative;
   z-index: 1000;
+}
+
+/* Post pages: navigation only, no hero background */
+.post-header {
+  background-image: none !important;
+  background-color: #020812;
+}
+
+.post-header::before,
+.post-header::after {
+  display: none;
 }
 
 .nav-dropdown {
@@ -370,6 +378,121 @@ header > .pb3-m.pb6-l {
 .card-body {
   background: rgba(2, 6, 26, 0.96);}
 
+/* Research direction cards (CADD style) */
+.cadd-research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.cadd-research-card {
+  display: flex;
+  flex-direction: column;
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 0.875rem;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cadd-research-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.32);
+}
+
+.cadd-research-image {
+  width: 100%;
+  min-height: 260px;
+  height: 260px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.cadd-research-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1.5rem;
+  background: #1e293b;
+}
+
+.cadd-research-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6366f1;
+}
+
+.cadd-research-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.cadd-research-body h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.35;
+}
+
+.cadd-research-body p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cadd-research-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  color: #ffffff;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.cadd-research-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.cadd-research-btn span {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+@media (max-width: 720px) {
+  .cadd-research-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cadd-research-image {
+    min-height: 220px;
+    height: 220px;
+  }
+
+  .cadd-research-body h3 {
+    font-size: 1.2rem;
+  }
+}
+
 /* Publication page styles */
 .publication-page {
   background: transparent;
@@ -444,6 +567,184 @@ header > .pb3-m.pb6-l {
   height: 0.25rem;
   border-radius: 999px;
   background: linear-gradient(90deg, #3b82f6, #818cf8);
+}
+
+/* Homepage "latest achievements" section (matches CADD software style) */
+.home-latest-section {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.home-latest-section-label {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #94a3b8;
+  letter-spacing: 0.05em;
+}
+
+.home-latest-section-title {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.home-latest-carousel {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.home-latest-carousel:last-child {
+  margin-bottom: 0;
+}
+
+.home-latest-track {
+  display: flex;
+  width: max-content;
+  gap: 1.25rem;
+  will-change: transform;
+}
+
+.home-latest-track-forward {
+  animation: home-latest-scroll-forward 40s linear infinite;
+}
+
+.home-latest-track-reverse {
+  animation: home-latest-scroll-reverse 40s linear infinite;
+}
+
+.home-latest-carousel:hover .home-latest-track {
+  animation-play-state: paused;
+}
+
+@keyframes home-latest-scroll-forward {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes home-latest-scroll-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.home-latest-card {
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.home-latest-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(59, 130, 246, 0.25);
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.1);
+}
+
+.home-latest-carousel-card {
+  flex: 0 0 auto;
+  width: 18rem;
+  height: auto;
+  min-height: 11rem;
+}
+
+.home-latest-card-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: inherit;
+  padding: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-latest-card-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.home-latest-index {
+  width: 3rem;
+  min-width: 3rem;
+  height: 3rem;
+  min-height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  color: #2563eb;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.home-latest-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.home-latest-card-title {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.home-latest-card-summary {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.home-latest-card-more {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.25rem;
+  color: #2563eb;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.home-latest-card-link:hover .home-latest-card-more {
+  color: #1d4ed8;
+}
+
+@media (max-width: 720px) {
+  .home-latest-carousel-card {
+    width: 16rem;
+    min-height: 10rem;
+  }
+
+  .home-latest-card-link {
+    padding: 1.25rem;
+  }
+
+  .home-latest-card-main {
+    gap: 0.875rem;
+  }
+
+  .home-latest-index {
+    width: 2.75rem;
+    min-width: 2.75rem;
+    height: 2.75rem;
+    min-height: 2.75rem;
+  }
 }
 
 .publication-grid {
@@ -1075,6 +1376,48 @@ main.pb7 {
     outline-offset: 4px;
   }
 
+/* Intro shell on people page: centered box with white background */
+.people-intro-shell {
+  background: transparent;
+  color: #0f172a;
+  padding: 1.5rem 1.75rem;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+/* Light button style inside the intro shell */
+.people-intro-shell .people-nav {
+  justify-content: center;
+}
+
+.people-intro-shell .people-nav-link {
+  background: #2563eb; /* site primary blue */
+  color: #ffffff;
+  border: none;
+  box-shadow: none;
+  padding: 0.6rem 1.1rem;
+  border-radius: 0.6rem;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.people-intro-shell .people-nav-link:hover,
+.people-intro-shell .people-nav-link:focus {
+  background: #1e4fc4;
+  color: #ffffff;
+  transform: none;
+  box-shadow: none;
+}
+
+.people-intro-shell .people-nav-link:focus-visible {
+  outline: 3px solid rgba(37,99,235,0.18);
+  outline-offset: 3px;
+}
+
   .people-section {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -1551,13 +1894,162 @@ main.pb7 {
     }
 
   }
+
+  /* =====================================================
+     Paper / Article page styles
+     ===================================================== */
+  .paper-hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    margin: 1.5rem 0 2.5rem;
+    color: #e2e8f0;
+    box-shadow: 0 14px 36px rgba(0,0,0,.18);
+  }
+
+  .paper-meta {
+    max-width: 48rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .paper-badge {
+    display: inline-block;
+    padding: .35rem .9rem;
+    border-radius: 999px;
+    background: rgba(99, 102, 241, .18);
+    color: #a5b4fc;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+
+  .paper-title {
+    font-size: 1.8rem;
+    line-height: 1.25;
+    font-weight: 700;
+    margin: 1rem 0 .5rem;
+    color: #fff;
+  }
+
+  .paper-subtitle {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    margin: 0 0 1.25rem;
+  }
+
+  .paper-authors {
+    font-size: .95rem;
+    color: #cbd5e1;
+    margin: 0 0 .5rem;
+    line-height: 1.5;
+  }
+
+  .paper-affiliations {
+    font-size: .85rem;
+    color: #94a3b8;
+    margin: 0 0 1.5rem;
+    line-height: 1.4;
+  }
+
+  .paper-actions {
+    display: flex;
+    gap: .75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .paper-download,
+  .paper-link,
+  .nested-links .paper-download,
+  .nested-links .paper-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .65rem 1.25rem;
+    border-radius: .6rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+
+  .paper-download,
+  .nested-links .paper-download {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: #fff !important;
+  }
+
+  .paper-link,
+  .nested-links .paper-link {
+    background: rgba(255,255,255,.1);
+    color: #e2e8f0 !important;
+    border: 1px solid rgba(255,255,255,.15);
+  }
+
+  .paper-download:hover,
+  .paper-link:hover,
+  .nested-links .paper-download:hover,
+  .nested-links .paper-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,.2);
+    color: #fff !important;
+  }
+
+  .post-page-content h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: .75rem;
+    color: #0f172a;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: .35rem;
+  }
+
+  .post-page-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1.25rem;
+    margin-bottom: .5rem;
+    color: #1e293b;
+  }
+
+  .post-page-content ol,
+  .post-page-content ul {
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .post-page-content li {
+    margin-bottom: .5rem;
+    line-height: 1.65;
+  }
+
+  .post-page-content p {
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 720px) {
+    .paper-hero {
+      padding: 1.75rem 1.25rem;
+    }
+
+    .paper-title {
+      font-size: 1.35rem;
+    }
+
+    .paper-subtitle {
+      font-size: .95rem;
+    }
+  }
+
 </style>
+<link rel="stylesheet" href="/NWPU-EVO/css/viewdetail.css" />
 
-  </head><body class="ma0 avenir bg-near-white production is-term">
-
-  <header>
-    <div class="pb7 bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  </head><body class="ma0 avenir bg-near-white production is-page is-page page-FinancialTimeSeriesPrediction">
+<div class="vd-header">
+  <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l center mw8 w-100 items-center justify-between">
     <a href="/NWPU-EVO/" class="dib no-underline">
       <div class="nav-brand flex items-center">
@@ -1628,6 +2120,15 @@ main.pb7 {
               </li>
             
           
+            
+            
+              <li class="list f5 f4-ns fw4 dib pr3">
+                <a class="hover-white white-90 no-underline" href="/NWPU-EVO/contact/" title="联系我们 page">
+                  联系我们
+                </a>
+              </li>
+            
+          
         </ul>
       
       <div class="ananke-socials"></div>
@@ -1636,41 +2137,140 @@ main.pb7 {
   </div>
 </nav>
 
-    </div>
-  </header>
-
-<main class="pb7" role="main">
-  
-  
-
-  <article class="pa3 pa4-ns nested-copy-line-height">
-    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray"></section>
-    <section class="flex-ns mt5 flex-wrap justify-around">
-      
-        <div class="w-100 w-30-l mb4 relative bg-white">
-          
-<div class="w-100 mb4 nested-copy-line-height relative bg-white">
-  <div class="mb3 pa4 gray overflow-hidden bg-white">
-    <span class="f6 db">Posts</span>
-    
-      <time class="f6 db" datetime="2026-01-02T00:00:00Z">January 2, 2026</time>
-    
-    <h1 class="f3 near-black">
-      <a href="/NWPU-EVO/posts/second/" class="link black dim">
-        金融时序分析
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      <p>A second post so the homepage list and taxonomy pages have multiple entries.</p>
-    </div>
-    <a href="/NWPU-EVO/posts/second/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-  </div>
 </div>
+<main class="pb7" role="main">
+<article class="vd-page">
+  <div class="vd-container">
+    <a href="/" class="vd-back">← 返回首页</a>
 
-        </div>
-      
+    <div class="vd-title-row">
+      <div class="vd-icon">📈</div>
+      <h1 class="vd-title">金融时序预测：数据驱动的市场建模与风险决策</h1>
+    </div>
+
+    <section class="vd-intro">
+      <div class="vd-summary">
+        <p>金融时间序列预测致力于对股价、收益率、波动率、交易量等按时间顺序排列的金融数据进行建模、推断与预测，核心挑战在于捕捉其动态依赖结构、波动聚集性与非平稳特征。课题组融合深度学习、图神经网络、强化学习与因果推断等方法，研究更鲁棒、更可解释的市场预测与风险决策技术。</p>
+<p>我们的研究覆盖资产定价、投资组合优化、高频交易策略、风险度量与异常检测等多个金融核心场景，努力让 AI 在复杂多变的市场环境中做出稳健、可解释的决策。</p>
+
+      </div>
     </section>
-    </article>
+
+    <div class="vd-wheel-wrap">
+      <div class="vd-wheel" aria-label="技术体系">
+        
+          <div class="vd-node vd-node-0" data-pos="0">
+            <h3 class="vd-node-title">深度时序建模</h3>
+            <ul class="vd-node-list">
+              
+              <li>Transformer 与状态空间模型</li>
+              
+              <li>变点检测与自适应窗口</li>
+              
+              <li>多尺度时序特征融合</li>
+              
+            </ul>
+          </div>
+        
+          <div class="vd-node vd-node-1" data-pos="1">
+            <h3 class="vd-node-title">图神经网络与市场关联</h3>
+            <ul class="vd-node-list">
+              
+              <li>股票关系网络动态建模</li>
+              
+              <li>行业联动与风险传染分析</li>
+              
+              <li>图注意力驱动的资产表征</li>
+              
+            </ul>
+          </div>
+        
+          <div class="vd-node vd-node-2" data-pos="2">
+            <h3 class="vd-node-title">强化学习与组合优化</h3>
+            <ul class="vd-node-list">
+              
+              <li>端到端投资组合策略学习</li>
+              
+              <li>风险调整奖励塑形</li>
+              
+              <li>多目标约束下的资产配置</li>
+              
+            </ul>
+          </div>
+        
+          <div class="vd-node vd-node-3" data-pos="3">
+            <h3 class="vd-node-title">可解释 AI 与风控</h3>
+            <ul class="vd-node-list">
+              
+              <li>因果推断与反事实分析</li>
+              
+              <li>市场异常与欺诈检测</li>
+              
+              <li>模型不确定性量化</li>
+              
+            </ul>
+          </div>
+        
+        <div class="vd-core">
+          <div class="vd-core-inner">
+            <span class="vd-core-label">Financial
+Prediction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="vd-details">
+      <p>在<strong>深度时序建模</strong>方面，我们针对金融序列的长程依赖、非平稳性与噪声干扰，研究基于 Transformer、状态空间模型与混合专家结构的预测方法。通过引入变点检测与自适应时间窗口机制，模型能够根据市场状态动态调整记忆长度与更新策略，从而提升极端行情下的预测稳定性 [1-3]。</p>
+<p>在<strong>图神经网络与市场关联</strong>方面，我们将股票市场建模为动态关系图，节点代表资产，边代表行业关联、供应链关系或统计相关性。课题组提出了融合宏观事件与微观价量信息的图注意力网络，能够捕捉板块轮动、风险传染等复杂市场现象，并将其用于资产选择与风险预警 [4-6]。</p>
+<p>在<strong>强化学习与组合优化</strong>方面，我们将投资组合管理建模为序列决策问题，研究考虑交易成本、市场冲击与风险约束的端到端策略学习方法。通过设计风险调整奖励函数与约束满足机制，智能体能够在追求收益的同时有效控制回撤与波动 [7-9]。</p>
+<p>在<strong>可解释 AI 与风控</strong>方面，我们关注模型决策的透明度与可靠性。课题组结合因果推断、注意力可视化与 Shapley 值等方法，分析输入特征对预测结果的真实贡献；同时研究基于不确定性量化的异常检测算法，用于识别市场操纵、黑天鹅事件与模型失效风险 [10-13]。</p>
+
+    </section>
+
+    
+    <section class="vd-references">
+      <h2 class="vd-references-title">
+        <span class="vd-references-bar"></span>
+        参考文献
+      </h2>
+      <div class="vd-ref-grid">
+        
+        <article class="vd-ref-card">
+          <div class="vd-ref-index">1</div>
+          <div class="vd-ref-text">Vaswani A, Shazeer N, Parmar N, et al. Attention is all you need. <em>NeurIPS</em>, 2017, 30: 5998-6008.</div>
+        </article>
+        
+        <article class="vd-ref-card">
+          <div class="vd-ref-index">2</div>
+          <div class="vd-ref-text">Lim B, Arık S Ö, Loeff N, et al. Temporal fusion transformers for interpretable multi-horizon time series forecasting. <em>International Journal of Forecasting</em>, 2021, 37(4): 1748-1764.</div>
+        </article>
+        
+        <article class="vd-ref-card">
+          <div class="vd-ref-index">3</div>
+          <div class="vd-ref-text">Wu H, Xu J, Wang J, et al. Autoformer: Decomposition transformers with auto-correlation for long-term series forecasting. <em>NeurIPS</em>, 2021, 34: 22419-22430.</div>
+        </article>
+        
+        <article class="vd-ref-card">
+          <div class="vd-ref-index">4</div>
+          <div class="vd-ref-text">Liu Y, Zheng Y. Graph neural networks for financial time series forecasting. <em>IEEE Transactions on Neural Networks and Learning Systems</em>, 2023, 34(8): 3586-3598.</div>
+        </article>
+        
+        <article class="vd-ref-card">
+          <div class="vd-ref-index">5</div>
+          <div class="vd-ref-text">Zhang Z, Zohren S, Roberts S. Deep reinforcement learning for automated stock trading: An ensemble strategy. <em>ICMLA</em>, 2020: 865-872.</div>
+        </article>
+        
+        <article class="vd-ref-card">
+          <div class="vd-ref-index">6</div>
+          <div class="vd-ref-text">Chen L, Pelger M, Zhu J. Causal inference in financial markets: A survey. <em>Journal of Financial Economics</em>, 2023, 149(2): 103720.</div>
+        </article>
+        
+      </div>
+    </section>
+    
+  </div>
+</article>
 </main><footer class="custom-site-footer bg-near-black white pv5" role="contentinfo">
   <div class="center mw9 ph3 grid gap4 footer-layout">
     <div class="footer-brand pa4 bg-black-40 br3">

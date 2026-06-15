@@ -1,0 +1,310 @@
+/* 详情页：仿 ZJU CADD 研究主题详情风格 */
+
+.vd-header {
+  background: linear-gradient(180deg, rgba(6, 14, 28, 0.9), #020812);
+}
+
+.vd-page {
+  background-color: #020812;
+  color: rgba(255, 255, 255, 0.92);
+  padding: 2rem 0 5rem;
+}
+
+.vd-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.vd-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #6ab7ff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  transition: color 0.2s ease;
+}
+
+.vd-back:hover {
+  color: #a8d8ff;
+}
+
+.vd-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+}
+
+.vd-icon {
+  flex: 0 0 auto;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  background: linear-gradient(135deg, #6c7dff, #4dd3ff);
+  box-shadow: 0 12px 30px rgba(77, 211, 255, 0.18);
+}
+
+.vd-title {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: #fff;
+  margin: 0;
+}
+
+.vd-intro {
+  margin-bottom: 0;
+}
+
+.vd-summary {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.vd-summary p {
+  margin: 0 0 1rem;
+  text-indent: 2em;
+}
+
+.vd-summary p:last-child {
+  margin-bottom: 0;
+}
+
+.vd-wheel-wrap {
+  float: right;
+  width: min(520px, 46%);
+  max-width: 520px;
+  margin: 0 0 1.5rem 2rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(106, 183, 255, 0.14);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+}
+
+.vd-wheel {
+  display: grid;
+  grid-template-columns: 1fr 1.9fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0.85rem;
+  align-items: center;
+  justify-items: center;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.vd-node {
+  background: rgba(6, 18, 38, 0.72);
+  border: 1px solid rgba(106, 183, 255, 0.22);
+  border-radius: 0.9rem;
+  padding: 0.8rem 0.9rem;
+  width: 100%;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+}
+
+.vd-node-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #6ab7ff;
+  margin: 0 0 0.45rem;
+  line-height: 1.25;
+}
+
+.vd-node-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vd-node-list li {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 0.25rem;
+}
+
+.vd-node-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  color: #4dd3ff;
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.vd-node-0 { grid-column: 1 / -1; grid-row: 1; }
+.vd-node-1 { grid-column: 1 / 2; grid-row: 2; }
+.vd-node-2 { grid-column: 3 / 4; grid-row: 2; }
+.vd-node-3 { grid-column: 1 / -1; grid-row: 3; }
+
+.vd-core {
+  grid-column: 2 / 3;
+  grid-row: 2;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #2a4d8a, #0d1f45 70%);
+  border: 2px solid rgba(106, 183, 255, 0.35);
+  box-shadow: 0 0 40px rgba(106, 183, 255, 0.12), inset 0 0 24px rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.vd-core::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: 50%;
+  border: 1px dashed rgba(106, 183, 255, 0.25);
+}
+
+.vd-core-label {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+  padding: 0 0.5rem;
+  white-space: pre-line;
+}
+
+.vd-details {
+  font-size: 1rem;
+  line-height: 1.95;
+  color: rgba(255, 255, 255, 0.82);
+  clear: none;
+}
+
+.vd-details p {
+  margin: 0 0 1.2rem;
+  text-indent: 2em;
+}
+
+.vd-details strong {
+  color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .vd-intro {
+    display: flow-root;
+  }
+
+  .vd-wheel-wrap {
+    float: none;
+    width: 100%;
+    max-width: 480px;
+    margin: 1.5rem auto;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .vd-title-row {
+    flex-wrap: wrap;
+  }
+
+  .vd-wheel {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .vd-node,
+  .vd-core {
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+  }
+
+  .vd-core {
+    width: 130px;
+    height: 130px;
+    margin: 0.5rem auto;
+  }
+}
+
+/* References section */
+.vd-references {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.vd-references-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 1.5rem;
+}
+
+.vd-references-bar {
+  display: inline-block;
+  width: 4px;
+  height: 1.3em;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #6c7dff, #4dd3ff);
+}
+
+.vd-ref-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.vd-ref-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(106, 183, 255, 0.12);
+  border-radius: 0.9rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.vd-ref-card:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(106, 183, 255, 0.22);
+}
+
+.vd-ref-index {
+  flex: 0 0 auto;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #3b6cb0, #1e3a6f);
+}
+
+.vd-ref-text {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.vd-ref-text p {
+  margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .vd-ref-grid {
+    grid-template-columns: 1fr;
+  }
+}
