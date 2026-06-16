@@ -4,7 +4,7 @@
   position: relative;
   background:
     linear-gradient(180deg, rgba(2, 8, 18, 0.72), rgba(2, 8, 18, 0.52)),
-    url('/images/header2.jpeg') center center / cover no-repeat;
+    url('../images/header2.jpeg') center center / cover no-repeat;
   padding-bottom: 6rem;
 }
 
@@ -22,7 +22,7 @@
 .contact-page {
   background:
     linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-    var(--contact-bg, url('/images/contract/createSword.jpg')) center center / cover no-repeat;
+    url('../images/contract/createSword.jpg') center center / cover no-repeat;
   color: #1f2937;
   min-height: calc(100vh - 300px);
   padding: 0;
