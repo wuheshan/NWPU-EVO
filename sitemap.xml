@@ -1,21 +1,38 @@
-
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://wuheshan.github.io/NWPU-EVO/</loc>
-    <lastmod>2026-01-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-15T01:45:10+08:00</lastmod>
+  </url><url>
+    <loc>https://wuheshan.github.io/NWPU-EVO/post/newnewnew/</loc>
+    <lastmod>2026-06-15T01:45:10+08:00</lastmod>
+  </url><url>
+    <loc>https://wuheshan.github.io/NWPU-EVO/post/</loc>
+    <lastmod>2026-06-15T01:45:10+08:00</lastmod>
   </url><url>
     <loc>https://wuheshan.github.io/NWPU-EVO/posts/</loc>
+    <lastmod>2026-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wuheshan.github.io/NWPU-EVO/posts/fourth/</loc>
     <lastmod>2026-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wuheshan.github.io/NWPU-EVO/posts/zxcg_2026-001/</loc>
     <lastmod>2026-01-04T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://wuheshan.github.io/NWPU-EVO/posts/third/</loc>
+    <lastmod>2026-01-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://wuheshan.github.io/NWPU-EVO/posts/zxcg_2026-002/</loc>
     <lastmod>2026-01-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://wuheshan.github.io/NWPU-EVO/posts/hello/</loc>
+    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://wuheshan.github.io/NWPU-EVO/posts/zxcg_2026-003/</loc>
+    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wuheshan.github.io/NWPU-EVO/posts/second/</loc>
     <lastmod>2026-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wuheshan.github.io/NWPU-EVO/posts/zxcg_2026-004/</loc>
