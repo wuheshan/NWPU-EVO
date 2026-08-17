@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>合照与荣誉 on Evolving Intelligence Lab</title>
-		<link>https://wuheshan.github.io/NWPU-EVO/honor/</link>
+		<link>http://localhost:1313/honor/</link>
 		<description>Recent content in 合照与荣誉 on Evolving Intelligence Lab</description>
 		<generator>Hugo</generator>
 		<language>en</language>
@@ -10,6 +10,6 @@
 		
 		
 		
-			<atom:link href="https://wuheshan.github.io/NWPU-EVO/honor/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/honor/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>

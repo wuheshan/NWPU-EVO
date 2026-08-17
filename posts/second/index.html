@@ -15,7 +15,7 @@
     
     
 
-    <link rel="stylesheet" href="/NWPU-EVO/ananke/css/main.02a37ad6c4e155c542d276915a0e3f83f5c7c5fec443350f6e60753f1679b7a7.css" integrity="sha256-AqN61sThVcVC0naRWg4/g/XHxf7EQzUPbmB1PxZ5t6c=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/ananke/css/main.02a37ad6c4e155c542d276915a0e3f83f5c7c5fec443350f6e60753f1679b7a7.css" integrity="sha256-AqN61sThVcVC0naRWg4/g/XHxf7EQzUPbmB1PxZ5t6c=" crossorigin="anonymous">
     <script>
   (function () {
     "use strict";
@@ -96,12 +96,12 @@
     
 
     
-      <link rel="canonical" href="https://wuheshan.github.io/NWPU-EVO/posts/second/">
+      <link rel="canonical" href="http://localhost:1313/posts/second/">
     
 
     
     
-    <meta property="og:url" content="https://wuheshan.github.io/NWPU-EVO/posts/second/">
+    <meta property="og:url" content="http://localhost:1313/posts/second/">
 	<meta property="og:site_name" content="Evolving Intelligence Lab">
 	<meta property="og:title" content="金融时序分析">
 	<meta property="og:description" content="金融时序预测：数据驱动的市场建模与风险决策。">
@@ -134,7 +134,7 @@ body {
   position: relative;
   background-image:
     linear-gradient(180deg, rgba(6, 14, 28, 0.18), rgba(6, 14, 28, 0.62)),
-    url('/NWPU-EVO/images/WuRenJi.jpeg');
+    url('/images/WuRenJi.jpeg');
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -148,10 +148,10 @@ body {
   }
 }
 
-header {
+.site-header {
   background-image:
     linear-gradient(180deg, rgba(6, 14, 28, 0.22), rgba(6, 14, 28, 0.18)),
-    url('/NWPU-EVO/images/header2.jpeg');
+    url('/images/header2.jpeg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -160,7 +160,7 @@ header {
   overflow: visible;
 }
 
-header::before {
+.site-header::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -168,7 +168,7 @@ header::before {
   pointer-events: none;
 }
 
-header::after {
+.site-header::after {
   content: "";
   position: absolute;
   left: 0;
@@ -180,22 +180,22 @@ header::after {
   z-index: 0;
 }
 
-header > * {
+.site-header > * {
   position: relative;
   z-index: 1;
 }
 
-header > div,
-header nav,
-header .bg-black {
+.site-header > div,
+.site-header nav,
+.site-header .bg-black {
   background: transparent !important;
 }
 
-header > div {
+.site-header > div {
   background: transparent !important;
 }
 
-header nav {
+.site-header nav {
   background: transparent !important;
   position: relative;
   z-index: 1000;
@@ -243,13 +243,13 @@ header nav {
 }
 
 /* Increase header vertical spacing so dropdown has room above page content */
-header > .pb3-m.pb6-l {
+.site-header > .pb3-m.pb6-l {
   padding-top: 1.5rem !important;
   padding-bottom: 4.5rem !important;
 }
 
 @media screen and (min-width: 64em) {
-  header > .pb3-m.pb6-l {
+  .site-header > .pb3-m.pb6-l {
     padding-top: 2rem !important;
     padding-bottom: 5rem !important;
   }
@@ -599,6 +599,7 @@ header > .pb3-m.pb6-l {
   overflow: hidden;
   width: 100%;
   margin-bottom: 1.25rem;
+  padding-bottom: 1.5rem;
 }
 
 .home-latest-carousel:last-child {
@@ -703,6 +704,14 @@ header > .pb3-m.pb6-l {
   color: #0f172a;
 }
 
+.home-latest-card-date {
+  margin: 0 0 0.45rem;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
 .home-latest-card-summary {
   margin: 0;
   color: #64748b;
@@ -712,6 +721,23 @@ header > .pb3-m.pb6-l {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.home-latest-card-summary-field {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #0f172a;
+  display: block;
+}
+
+.home-latest-card-title-paper {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #64748b;
 }
 
 .home-latest-card-more {
@@ -1761,7 +1787,7 @@ main.pb7 {
     height: 1.8rem;
     flex-shrink: 0;
     border-radius: 0.35rem;
-    background: url('/NWPU-EVO/images/location.jpg') center center / cover no-repeat;
+    background: url('/images/location.jpg') center center / cover no-repeat;
     background-color: transparent;
     border: none;
     color: transparent;
@@ -2053,14 +2079,14 @@ main.pb7 {
   </head><body class="ma0 avenir bg-near-white production is-page is-page page-second">
   
 
-  <header>
+  <header class="site-header">
     <div class="pb7 bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l center mw8 w-100 items-center justify-between">
-    <a href="/NWPU-EVO/" class="dib no-underline">
+    <a href="/" class="dib no-underline">
       <div class="nav-brand flex items-center">
         
-          <img src="/NWPU-EVO/images/nwpu.png" alt="Evolving Intelligence Lab logo" class="brand-icon" />
+          <img src="/images/nwpu.png" alt="Evolving Intelligence Lab logo" class="brand-icon" />
         
         <div class="brand-text ml3">
           <span class="brand-title f3 f2-m fw7 white-90">Evo Lab</span>
@@ -2075,7 +2101,7 @@ main.pb7 {
             
             
               <li class="list f5 f4-ns fw4 dib pr3">
-                <a class="hover-white white-90 no-underline" href="/NWPU-EVO/" title="首页 page">
+                <a class="hover-white white-90 no-underline" href="/" title="首页 page">
                   首页
                 </a>
               </li>
@@ -2084,16 +2110,16 @@ main.pb7 {
             
             
               <li class="list f5 f4-ns fw4 dib pr3 nav-dropdown relative">
-                <a class="hover-white white-90 no-underline flex items-center gap1" href="/NWPU-EVO/people/" title="课题组成员 page">
+                <a class="hover-white white-90 no-underline flex items-center gap1" href="/people/" title="课题组成员 page">
                   课题组成员 <span class="dropdown-caret">▾</span>
                 </a>
                 <div class="dropdown-menu absolute bg-black-90 white-90 br2 pa3 shadow-4">
                   
-                    <a class="dropdown-link" href="/NWPU-EVO/people/">教师</a>
-                    <a class="dropdown-link" href="/NWPU-EVO/people/#postdoc">博士后</a>
-                    <a class="dropdown-link" href="/NWPU-EVO/people/#graduate">研究生</a>
-                    <a class="dropdown-link" href="/NWPU-EVO/people/#undergraduate">本科生</a>
-                    <a class="dropdown-link" href="/NWPU-EVO/people/#alumni">前成员</a>
+                    <a class="dropdown-link" href="/people/">教师</a>
+                    <a class="dropdown-link" href="/people/#postdoc">博士后</a>
+                    <a class="dropdown-link" href="/people/#graduate">研究生</a>
+                    <a class="dropdown-link" href="/people/#undergraduate">本科生</a>
+                    <a class="dropdown-link" href="/people/#alumni">前成员</a>
                   
                 </div>
               </li>
@@ -2102,15 +2128,15 @@ main.pb7 {
             
             
               <li class="list f5 f4-ns fw4 dib pr3 nav-dropdown relative">
-                <a class="hover-white white-90 no-underline flex items-center gap1" href="/NWPU-EVO/publication/" title="发表成果 page">
+                <a class="hover-white white-90 no-underline flex items-center gap1" href="/publication/" title="发表成果 page">
                   发表成果 <span class="dropdown-caret">▾</span>
                 </a>
                 <div class="dropdown-menu absolute bg-black-90 white-90 br2 pa3 shadow-4">
                   
-                    <a class="dropdown-link" href="/NWPU-EVO/publication/#books">书目章节</a>
-                    <a class="dropdown-link" href="/NWPU-EVO/publication/#publication">发表论文</a>
-                    <a class="dropdown-link" href="/NWPU-EVO/publication/#software">软件著作权</a>
-                    <a class="dropdown-link" href="/NWPU-EVO/publication/#patent">发明专利</a>
+                    <a class="dropdown-link" href="/publication/#books">书目章节</a>
+                    <a class="dropdown-link" href="/publication/#publication">发表论文</a>
+                    <a class="dropdown-link" href="/publication/#software">软件著作权</a>
+                    <a class="dropdown-link" href="/publication/#patent">发明专利</a>
                   
                 </div>
               </li>
@@ -2119,7 +2145,7 @@ main.pb7 {
             
             
               <li class="list f5 f4-ns fw4 dib pr3 nav-dropdown relative">
-                <a class="hover-white white-90 no-underline flex items-center gap1" href="/NWPU-EVO/#" title="教学情况 page">
+                <a class="hover-white white-90 no-underline flex items-center gap1" href="/#" title="教学情况 page">
                   教学情况 <span class="dropdown-caret">▾</span>
                 </a>
                 <div class="dropdown-menu absolute bg-black-90 white-90 br2 pa3 shadow-4">
@@ -2133,7 +2159,7 @@ main.pb7 {
             
             
               <li class="list f5 f4-ns fw4 dib pr3">
-                <a class="hover-white white-90 no-underline" href="/NWPU-EVO/honor/" title="合照与荣誉 page">
+                <a class="hover-white white-90 no-underline" href="/honor/" title="合照与荣誉 page">
                   合照与荣誉
                 </a>
               </li>
@@ -2142,7 +2168,7 @@ main.pb7 {
             
             
               <li class="list f5 f4-ns fw4 dib pr3">
-                <a class="hover-white white-90 no-underline" href="/NWPU-EVO/contact/" title="联系我们 page">
+                <a class="hover-white white-90 no-underline" href="/contact/" title="联系我们 page">
                   联系我们
                 </a>
               </li>
@@ -2215,30 +2241,30 @@ main.pb7 {
   <div class="center mw9 ph3 grid gap4 footer-layout">
     <div class="footer-brand pa4 bg-black-40 br3">
       
-        <img src="/NWPU-EVO/images/nwpu.png" alt="Evolving Intelligence Lab logo" class="footer-logo mb3" />
+        <img src="/images/nwpu.png" alt="Evolving Intelligence Lab logo" class="footer-logo mb3" />
       
       <h2 class="f3 fw7 mb2">Evo Lab</h2>
       <p class="white-70">Evolving Intelligence Lab<br>本课题组致力于自主进化智能体、具身智能、金融时序预测</p>
     </div>
 
     <div class="footer-column pa4">
-      <h3 class="f5 fw7 mb3"><a href="/NWPU-EVO/people/" class="white-90 no-underline">课题组成员</a></h3>
+      <h3 class="f5 fw7 mb3"><a href="/people/" class="white-90 no-underline">课题组成员</a></h3>
       <ul class="footer-links list pa0 ma0">
-        <li><a class="white-70 no-underline" href="/NWPU-EVO/people/">教师</a></li>
+        <li><a class="white-70 no-underline" href="/people/">教师</a></li>
         
-        <li><a class="white-70 no-underline" href="/NWPU-EVO/people/#graduate">研究生</a></li>
-        <li><a class="white-70 no-underline" href="/NWPU-EVO/people/#undergraduate">本科生</a></li>
-        <li><a class="white-70 no-underline" href="/NWPU-EVO/people/#alumni">前成员</a></li>
+        <li><a class="white-70 no-underline" href="/people/#graduate">研究生</a></li>
+        <li><a class="white-70 no-underline" href="/people/#undergraduate">本科生</a></li>
+        <li><a class="white-70 no-underline" href="/people/#alumni">前成员</a></li>
       </ul>
     </div>
 
     <div class="footer-column pa4">
-      <h3 class="f5 fw7 mb3"><a href="/NWPU-EVO/publication/" class="white-90 no-underline">发表成果</a></h3>
+      <h3 class="f5 fw7 mb3"><a href="/publication/" class="white-90 no-underline">发表成果</a></h3>
       <ul class="footer-links list pa0 ma0">
         
-        <li><a class="white-70 no-underline" href="/NWPU-EVO/publication/#publication">发表论文</a></li>
-        <li><a class="white-70 no-underline" href="/NWPU-EVO/publication/#software">软件著作权</a></li>
-        <li><a class="white-70 no-underline" href="/NWPU-EVO/publication/#patent">发明专利</a></li>
+        <li><a class="white-70 no-underline" href="/publication/#publication">发表论文</a></li>
+        <li><a class="white-70 no-underline" href="/publication/#software">软件著作权</a></li>
+        <li><a class="white-70 no-underline" href="/publication/#patent">发明专利</a></li>
       </ul>
     </div>
 

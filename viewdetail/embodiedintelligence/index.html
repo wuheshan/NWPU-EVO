@@ -15,7 +15,7 @@
     
     
 
-    <link rel="stylesheet" href="/NWPU-EVO/ananke/css/main.02a37ad6c4e155c542d276915a0e3f83f5c7c5fec443350f6e60753f1679b7a7.css" integrity="sha256-AqN61sThVcVC0naRWg4/g/XHxf7EQzUPbmB1PxZ5t6c=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/ananke/css/main.02a37ad6c4e155c542d276915a0e3f83f5c7c5fec443350f6e60753f1679b7a7.css" integrity="sha256-AqN61sThVcVC0naRWg4/g/XHxf7EQzUPbmB1PxZ5t6c=" crossorigin="anonymous">
     <script>
   (function () {
     "use strict";
@@ -96,12 +96,12 @@
     
 
     
-      <link rel="canonical" href="https://wuheshan.github.io/NWPU-EVO/viewdetail/embodiedintelligence/">
+      <link rel="canonical" href="http://localhost:1313/viewdetail/embodiedintelligence/">
     
 
     
     
-    <meta property="og:url" content="https://wuheshan.github.io/NWPU-EVO/viewdetail/embodiedintelligence/">
+    <meta property="og:url" content="http://localhost:1313/viewdetail/embodiedintelligence/">
 	<meta property="og:site_name" content="Evolving Intelligence Lab">
 	<meta property="og:title" content="具身智能：感知-行动-认知深度融合的机器人智能">
 	<meta property="og:description" content="Embodied Intelligence 研究方向介绍">
@@ -111,7 +111,7 @@
 
 	<meta itemprop="name" content="具身智能：感知-行动-认知深度融合的机器人智能">
 	<meta itemprop="description" content="Embodied Intelligence 研究方向介绍">
-	<meta itemprop="wordCount" content="9">
+	<meta itemprop="wordCount" content="7">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="具身智能：感知-行动-认知深度融合的机器人智能">
 	<meta name="twitter:description" content="Embodied Intelligence 研究方向介绍">
@@ -131,7 +131,7 @@ body {
   position: relative;
   background-image:
     linear-gradient(180deg, rgba(6, 14, 28, 0.18), rgba(6, 14, 28, 0.62)),
-    url('/NWPU-EVO/images/WuRenJi.jpeg');
+    url('/images/WuRenJi.jpeg');
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -145,10 +145,10 @@ body {
   }
 }
 
-header {
+.site-header {
   background-image:
     linear-gradient(180deg, rgba(6, 14, 28, 0.22), rgba(6, 14, 28, 0.18)),
-    url('/NWPU-EVO/images/header2.jpeg');
+    url('/images/header2.jpeg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -157,7 +157,7 @@ header {
   overflow: visible;
 }
 
-header::before {
+.site-header::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -165,7 +165,7 @@ header::before {
   pointer-events: none;
 }
 
-header::after {
+.site-header::after {
   content: "";
   position: absolute;
   left: 0;
@@ -177,22 +177,22 @@ header::after {
   z-index: 0;
 }
 
-header > * {
+.site-header > * {
   position: relative;
   z-index: 1;
 }
 
-header > div,
-header nav,
-header .bg-black {
+.site-header > div,
+.site-header nav,
+.site-header .bg-black {
   background: transparent !important;
 }
 
-header > div {
+.site-header > div {
   background: transparent !important;
 }
 
-header nav {
+.site-header nav {
   background: transparent !important;
   position: relative;
   z-index: 1000;
@@ -240,13 +240,13 @@ header nav {
 }
 
 /* Increase header vertical spacing so dropdown has room above page content */
-header > .pb3-m.pb6-l {
+.site-header > .pb3-m.pb6-l {
   padding-top: 1.5rem !important;
   padding-bottom: 4.5rem !important;
 }
 
 @media screen and (min-width: 64em) {
-  header > .pb3-m.pb6-l {
+  .site-header > .pb3-m.pb6-l {
     padding-top: 2rem !important;
     padding-bottom: 5rem !important;
   }
@@ -596,6 +596,7 @@ header > .pb3-m.pb6-l {
   overflow: hidden;
   width: 100%;
   margin-bottom: 1.25rem;
+  padding-bottom: 1.5rem;
 }
 
 .home-latest-carousel:last-child {
@@ -700,6 +701,14 @@ header > .pb3-m.pb6-l {
   color: #0f172a;
 }
 
+.home-latest-card-date {
+  margin: 0 0 0.45rem;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
 .home-latest-card-summary {
   margin: 0;
   color: #64748b;
@@ -709,6 +718,23 @@ header > .pb3-m.pb6-l {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.home-latest-card-summary-field {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #0f172a;
+  display: block;
+}
+
+.home-latest-card-title-paper {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #64748b;
 }
 
 .home-latest-card-more {
@@ -1758,7 +1784,7 @@ main.pb7 {
     height: 1.8rem;
     flex-shrink: 0;
     border-radius: 0.35rem;
-    background: url('/NWPU-EVO/images/location.jpg') center center / cover no-repeat;
+    background: url('/images/location.jpg') center center / cover no-repeat;
     background-color: transparent;
     border: none;
     color: transparent;
@@ -2047,16 +2073,16 @@ main.pb7 {
   }
 
 </style>
-<link rel="stylesheet" href="/NWPU-EVO/css/viewdetail.css" />
+<link rel="stylesheet" href="/css/viewdetail.css?v=2" />
 
   </head><body class="ma0 avenir bg-near-white production is-page is-page page-EmbodiedIntelligence">
 <div class="vd-header">
   <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l center mw8 w-100 items-center justify-between">
-    <a href="/NWPU-EVO/" class="dib no-underline">
+    <a href="/" class="dib no-underline">
       <div class="nav-brand flex items-center">
         
-          <img src="/NWPU-EVO/images/nwpu.png" alt="Evolving Intelligence Lab logo" class="brand-icon" />
+          <img src="/images/nwpu.png" alt="Evolving Intelligence Lab logo" class="brand-icon" />
         
         <div class="brand-text ml3">
           <span class="brand-title f3 f2-m fw7 white-90">Evo Lab</span>
@@ -2071,7 +2097,7 @@ main.pb7 {
             
             
               <li class="list f5 f4-ns fw4 dib pr3">
-                <a class="hover-white white-90 no-underline" href="/NWPU-EVO/" title="首页 page">
+                <a class="hover-white white-90 no-underline" href="/" title="首页 page">
                   首页
                 </a>
               </li>
@@ -2080,16 +2106,16 @@ main.pb7 {
             
             
               <li class="list f5 f4-ns fw4 dib pr3 nav-dropdown relative">
-                <a class="hover-white white-90 no-underline flex items-center gap1" href="/NWPU-EVO/people/" title="课题组成员 page">
+                <a class="hover-white white-90 no-underline flex items-center gap1" href="/people/" title="课题组成员 page">
                   课题组成员 <span class="dropdown-caret">▾</span>
                 </a>
                 <div class="dropdown-menu absolute bg-black-90 white-90 br2 pa3 shadow-4">
                   
-                    <a class="dropdown-link" href="/NWPU-EVO/people/">教师</a>
-                    <a class="dropdown-link" href="/NWPU-EVO/people/#postdoc">博士后</a>
-                    <a class="dropdown-link" href="/NWPU-EVO/people/#graduate">研究生</a>
-                    <a class="dropdown-link" href="/NWPU-EVO/people/#undergraduate">本科生</a>
-                    <a class="dropdown-link" href="/NWPU-EVO/people/#alumni">前成员</a>
+                    <a class="dropdown-link" href="/people/">教师</a>
+                    <a class="dropdown-link" href="/people/#postdoc">博士后</a>
+                    <a class="dropdown-link" href="/people/#graduate">研究生</a>
+                    <a class="dropdown-link" href="/people/#undergraduate">本科生</a>
+                    <a class="dropdown-link" href="/people/#alumni">前成员</a>
                   
                 </div>
               </li>
@@ -2098,15 +2124,15 @@ main.pb7 {
             
             
               <li class="list f5 f4-ns fw4 dib pr3 nav-dropdown relative">
-                <a class="hover-white white-90 no-underline flex items-center gap1" href="/NWPU-EVO/publication/" title="发表成果 page">
+                <a class="hover-white white-90 no-underline flex items-center gap1" href="/publication/" title="发表成果 page">
                   发表成果 <span class="dropdown-caret">▾</span>
                 </a>
                 <div class="dropdown-menu absolute bg-black-90 white-90 br2 pa3 shadow-4">
                   
-                    <a class="dropdown-link" href="/NWPU-EVO/publication/#books">书目章节</a>
-                    <a class="dropdown-link" href="/NWPU-EVO/publication/#publication">发表论文</a>
-                    <a class="dropdown-link" href="/NWPU-EVO/publication/#software">软件著作权</a>
-                    <a class="dropdown-link" href="/NWPU-EVO/publication/#patent">发明专利</a>
+                    <a class="dropdown-link" href="/publication/#books">书目章节</a>
+                    <a class="dropdown-link" href="/publication/#publication">发表论文</a>
+                    <a class="dropdown-link" href="/publication/#software">软件著作权</a>
+                    <a class="dropdown-link" href="/publication/#patent">发明专利</a>
                   
                 </div>
               </li>
@@ -2115,7 +2141,7 @@ main.pb7 {
             
             
               <li class="list f5 f4-ns fw4 dib pr3 nav-dropdown relative">
-                <a class="hover-white white-90 no-underline flex items-center gap1" href="/NWPU-EVO/#" title="教学情况 page">
+                <a class="hover-white white-90 no-underline flex items-center gap1" href="/#" title="教学情况 page">
                   教学情况 <span class="dropdown-caret">▾</span>
                 </a>
                 <div class="dropdown-menu absolute bg-black-90 white-90 br2 pa3 shadow-4">
@@ -2129,7 +2155,7 @@ main.pb7 {
             
             
               <li class="list f5 f4-ns fw4 dib pr3">
-                <a class="hover-white white-90 no-underline" href="/NWPU-EVO/honor/" title="合照与荣誉 page">
+                <a class="hover-white white-90 no-underline" href="/honor/" title="合照与荣誉 page">
                   合照与荣誉
                 </a>
               </li>
@@ -2138,7 +2164,7 @@ main.pb7 {
             
             
               <li class="list f5 f4-ns fw4 dib pr3">
-                <a class="hover-white white-90 no-underline" href="/NWPU-EVO/contact/" title="联系我们 page">
+                <a class="hover-white white-90 no-underline" href="/contact/" title="联系我们 page">
                   联系我们
                 </a>
               </li>
@@ -2156,7 +2182,7 @@ main.pb7 {
 <main class="pb7" role="main">
 <article class="vd-page">
   <div class="vd-container">
-    <a href="/NWPU-EVO/" class="vd-back">← 返回首页</a>
+    <a href="/" class="vd-back">← 返回首页</a>
 
     <div class="vd-title-row">
       <div class="vd-icon">🤖</div>
@@ -2238,8 +2264,8 @@ Intelligence</span>
     <section class="vd-details">
       <p>在<strong>视觉-语言-动作大模型</strong>方面，我们研究如何让机器人通过自然语言指令理解人类意图，并直接生成低层动作轨迹。课题组提出了基于语义锚点的动作解码框架，将高层任务描述映射为可执行的末端执行器轨迹与关节角序列，同时引入环境反馈进行在线修正，显著提升了开集指令下的任务成功率 [1-3]。</p>
 <p>在<strong>仿真到现实迁移</strong>方面，针对真实机器人数据采集成本高、危险性大的问题，我们构建了高保真物理仿真平台，并结合域随机化、域自适应与对抗训练等技术，缩小仿真与真实环境之间的感知与控制鸿沟。通过在仿真中大规模训练、在真机上少量微调，实现了四足机器人、机械臂与人形机器人的快速部署 [4-6]。</p>
-<p>在<strong>灵巧操作</strong>方面，我们重点关注多自由度灵巧手的触觉-视觉融合感知与力控策略。通过建立细粒度接触力模型，结合强化学习进行抓取稳定性优化，使机器人能够完成插拔、装配、翻转等精细操作。针对可变形物体、透明反光物体等挑战性目标，课题组提出了基于物理先验的抓点预测方法，有效提升了操作成功率 [7-9]。</p>
-<p>在<strong>导航与全身控制</strong>方面，我们研究视觉语义导航、动态避障与长程路径规划算法，使机器人能够在未知室内环境中自主探索并到达语义目标。对于人形机器人，我们结合模型预测控制（MPC）与强化学习，研究双足平衡、崎岖地形行走与全身协调运动生成，为未来通用机器人平台奠定基础 [10-13]。</p>
+<p>在<strong>灵巧操作</strong>方面，我们重点关注多自由度灵巧手的触觉-视觉融合感知与力控策略。通过建立细粒度接触力模型，结合强化学习进行抓取稳定性优化，使机器人能够完成插拔、装配、翻转等精细操作。针对可变形物体、透明反光物体等挑战性目标，课题组提出了基于物理先验的抓点预测方法，有效提升了操作成功率。</p>
+<p>在<strong>导航与全身控制</strong>方面，我们研究视觉语义导航、动态避障与长程路径规划算法，使机器人能够在未知室内环境中自主探索并到达语义目标。对于人形机器人，我们结合模型预测控制（MPC）与强化学习，研究双足平衡、崎岖地形行走与全身协调运动生成，为未来通用机器人平台奠定基础。</p>
 <p>在<strong>具身问答</strong>方面，我们致力于探索机器人如何通过主动感知与物理交互来回答关于开放环境的复杂问题。与传统视觉问答不同，具身问答要求智能体不仅&quot;看懂&quot;场景，更需通过自主导航、视角调整与物体操作来主动获取回答问题所需的关键信息。</p>
 
     </section>
@@ -2291,30 +2317,30 @@ Intelligence</span>
   <div class="center mw9 ph3 grid gap4 footer-layout">
     <div class="footer-brand pa4 bg-black-40 br3">
       
-        <img src="/NWPU-EVO/images/nwpu.png" alt="Evolving Intelligence Lab logo" class="footer-logo mb3" />
+        <img src="/images/nwpu.png" alt="Evolving Intelligence Lab logo" class="footer-logo mb3" />
       
       <h2 class="f3 fw7 mb2">Evo Lab</h2>
       <p class="white-70">Evolving Intelligence Lab<br>本课题组致力于自主进化智能体、具身智能、金融时序预测</p>
     </div>
 
     <div class="footer-column pa4">
-      <h3 class="f5 fw7 mb3"><a href="/NWPU-EVO/people/" class="white-90 no-underline">课题组成员</a></h3>
+      <h3 class="f5 fw7 mb3"><a href="/people/" class="white-90 no-underline">课题组成员</a></h3>
       <ul class="footer-links list pa0 ma0">
-        <li><a class="white-70 no-underline" href="/NWPU-EVO/people/">教师</a></li>
+        <li><a class="white-70 no-underline" href="/people/">教师</a></li>
         
-        <li><a class="white-70 no-underline" href="/NWPU-EVO/people/#graduate">研究生</a></li>
-        <li><a class="white-70 no-underline" href="/NWPU-EVO/people/#undergraduate">本科生</a></li>
-        <li><a class="white-70 no-underline" href="/NWPU-EVO/people/#alumni">前成员</a></li>
+        <li><a class="white-70 no-underline" href="/people/#graduate">研究生</a></li>
+        <li><a class="white-70 no-underline" href="/people/#undergraduate">本科生</a></li>
+        <li><a class="white-70 no-underline" href="/people/#alumni">前成员</a></li>
       </ul>
     </div>
 
     <div class="footer-column pa4">
-      <h3 class="f5 fw7 mb3"><a href="/NWPU-EVO/publication/" class="white-90 no-underline">发表成果</a></h3>
+      <h3 class="f5 fw7 mb3"><a href="/publication/" class="white-90 no-underline">发表成果</a></h3>
       <ul class="footer-links list pa0 ma0">
         
-        <li><a class="white-70 no-underline" href="/NWPU-EVO/publication/#publication">发表论文</a></li>
-        <li><a class="white-70 no-underline" href="/NWPU-EVO/publication/#software">软件著作权</a></li>
-        <li><a class="white-70 no-underline" href="/NWPU-EVO/publication/#patent">发明专利</a></li>
+        <li><a class="white-70 no-underline" href="/publication/#publication">发表论文</a></li>
+        <li><a class="white-70 no-underline" href="/publication/#software">软件著作权</a></li>
+        <li><a class="white-70 no-underline" href="/publication/#patent">发明专利</a></li>
       </ul>
     </div>
 
