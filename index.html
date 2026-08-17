@@ -525,32 +525,45 @@ body {
   color: #475569;
 }
 
+.publication-header {
+  text-align: center;
+}
+
+.publication-title,
+.publication-intro {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .publication-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 0.75rem;
 }
 
-.publication-tab {
+.publication-page .publication-tab {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 9rem;
-  padding: 0.8rem 1rem;
-  background: #ffffff;
-  border: 1px solid rgba(15, 23, 42, 0.08);
-  color: #0f172a;
-  border-radius: 999px;
+  padding: 0.6rem 1.1rem;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.6rem;
   font-weight: 600;
   font-size: 0.95rem;
   text-decoration: none;
-  transition: all 0.2s ease;
+  box-shadow: none;
+  transition: background-color 0.12s ease, color 0.12s ease;
 }
 
-.publication-tab:hover,
-.publication-tab:focus {
-  background: #eff6ff;
-  border-color: rgba(59, 130, 246, 0.3);
-  color: #1d4ed8;
-  transform: translateY(-1px);
+.publication-page .publication-tab:hover,
+.publication-page .publication-tab:focus {
+  background: #1e4fc4;
+  color: #ffffff;
+  transform: none;
+  box-shadow: none;
 }
 
 .publication-section {
@@ -930,11 +943,10 @@ body {
   margin: 0.35rem 0 0;
   color: #0e7490;
   font-size: 0.95rem;
-  font-weight: 600;
   line-height: 1.5;
 }
 
-.publication-card-btn {
+.publication-page .publication-card-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -949,7 +961,7 @@ body {
   transition: all 0.2s ease;
 }
 
-.publication-card-btn:hover {
+.publication-page .publication-card-btn:hover {
   background: #bae6fd;
   color: #0369a1;
 }
@@ -960,7 +972,7 @@ body {
     align-items: flex-start;
   }
 
-  .publication-card-btn {
+  .publication-page .publication-card-btn {
     margin-left: 4.4rem;
     margin-top: 0.75rem;
   }
@@ -2208,7 +2220,7 @@ main.pb7 {
                 </a>
                 <div class="dropdown-menu absolute bg-black-90 white-90 br2 pa3 shadow-4">
                   
-                    <a class="dropdown-link" href="/NWPU-EVO/publication/#books">书目章节</a>
+                    
                     <a class="dropdown-link" href="/NWPU-EVO/publication/#publication">发表论文</a>
                     <a class="dropdown-link" href="/NWPU-EVO/publication/#software">软件著作权</a>
                     <a class="dropdown-link" href="/NWPU-EVO/publication/#patent">发明专利</a>
@@ -2293,7 +2305,7 @@ main.pb7 {
       <div class="mb5">
         <div class="flex flex-column flex-row-l items-center justify-between gap3 mb4">
           <article class="stat-card pa4 br3 bg-black-90 tc w-100 w-30-l">
-            <div class="f1 f-subheadline-l fw7 blue">10</div>
+            <div class="f1 f-subheadline-l fw7 blue">12</div>
             <p class="f5 white-70 mt3">发表论文</p>
           </article>
           <article class="stat-card pa4 br3 bg-black-90 tc w-100 w-30-l">
