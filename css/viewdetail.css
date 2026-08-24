@@ -1,7 +1,12 @@
 /* 详情页：仿 ZJU CADD 研究主题详情风格 */
 
 .vd-header {
-  background: linear-gradient(180deg, rgba(6, 14, 28, 0.9), #020812);
+  background:
+    linear-gradient(180deg, rgba(6, 14, 28, 0.22), rgba(6, 14, 28, 0.18)),
+    url('../images/header2.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .vd-page {
